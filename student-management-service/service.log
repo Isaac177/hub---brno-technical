@@ -1,0 +1,624 @@
+yarn run v1.22.22
+$ nodemon --exec ts-node-dev --respawn --transpile-only index.ts
+[33m[nodemon] 3.1.4[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 22:34:46 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:34:47[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:34:47[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:34:48[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:34:48[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:34:48[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:34:48[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:34:48[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 22:35:27 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/consumers/userDataRequestConsumer.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 22:35:27 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:35:27[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_student" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:28[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 22:35:34 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/consumers/userDataRequestConsumer.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+🛑 Shutting down database connection...
+[90m2025-06-22 17:35:34[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:34[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 22:35:34 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:35:34[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_student" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:35:35[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 22:36:04 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/consumers/userDataRequestConsumer.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 22:36:04 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:36:05[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:36:05[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:06[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:06[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_course" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:36:06[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:06[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:06[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 22:36:10 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/consumers/userDataRequestConsumer.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+🛑 Shutting down database connection...
+[90m2025-06-22 17:36:10[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:10[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connection closed
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[32m[nodemon] still waiting for 1 sub-process to finish...[39m
+[INFO] 22:36:11 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:36:11[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:36:12[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:12[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:12[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_course" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:36:13[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:13[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:13[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[32m[nodemon] restarting due to changes...[39m
+[INFO] 22:36:17 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/consumers/userDataRequestConsumer.ts has been modified
+🛑 Shutting down database connection...
+[90m2025-06-22 17:36:17[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:17[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connection closed
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[32m[nodemon] still waiting for 1 sub-process to finish...[39m
+[INFO] 22:36:17 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_course" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 17:36:18[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+📨 Received message in user_data_request_queue_course
+📋 Message content: {"userId":"086ee961-24a4-4967-810f-11151d435612","eventType":"USER_DATA_REQUEST"}
+🎯 Processing user data request for userId: 086ee961-24a4-4967-810f-11151d435612 with eventType: USER_DATA_REQUEST
+📊 Fetching comprehensive data for user: 086ee961-24a4-4967-810f-11151d435612
+prisma:query SELECT 1
+prisma:query SELECT "public"."Enrollment"."id", "public"."Enrollment"."userId", "public"."Enrollment"."courseId", "public"."Enrollment"."status"::text, "public"."Enrollment"."enrolledAt", "public"."Enrollment"."lastAccessedAt", "public"."Enrollment"."completedAt", "public"."Enrollment"."progress", "public"."Enrollment"."transactionId", "public"."Enrollment"."amount", "public"."Enrollment"."currency", "public"."Enrollment"."paymentStatus"::text, "public"."Enrollment"."userEmail", "public"."Enrollment"."updatedAt" FROM "public"."Enrollment" WHERE ("public"."Enrollment"."userEmail" = $1 OR "public"."Enrollment"."userId" = $2) ORDER BY "public"."Enrollment"."enrolledAt" DESC OFFSET $3
+📊 Query Enrollment.findMany took 123ms
+📚 Found 0 enrollments for user 086ee961-24a4-4967-810f-11151d435612
+prisma:query SELECT "public"."Enrollment"."id", "public"."Enrollment"."courseId" FROM "public"."Enrollment" WHERE ("public"."Enrollment"."userEmail" = $1 OR "public"."Enrollment"."userId" = $2) OFFSET $3
+📊 Query Enrollment.findMany took 53ms
+prisma:query SELECT "public"."CourseProgress"."id", "public"."CourseProgress"."enrollmentId", "public"."CourseProgress"."courseId", "public"."CourseProgress"."userEmail", "public"."CourseProgress"."components", "public"."CourseProgress"."componentProgress", "public"."CourseProgress"."totalComponents", "public"."CourseProgress"."completedComponents", "public"."CourseProgress"."overallProgress", "public"."CourseProgress"."topicsProgress", "public"."CourseProgress"."lastUpdated" FROM "public"."CourseProgress" WHERE 1=0 OFFSET $1
+📊 Query CourseProgress.findMany took 54ms
+📈 Found 0 course progress records for user 086ee961-24a4-4967-810f-11151d435612
+prisma:query SELECT "public"."Enrollment"."id" FROM "public"."Enrollment" WHERE ("public"."Enrollment"."userEmail" = $1 OR "public"."Enrollment"."userId" = $2) OFFSET $3
+📊 Query Enrollment.findMany took 62ms
+prisma:query SELECT "public"."QuizProgress"."id", "public"."QuizProgress"."enrollmentId", "public"."QuizProgress"."quizId", "public"."QuizProgress"."attempts", "public"."QuizProgress"."bestScore", "public"."QuizProgress"."lastAttemptAt", "public"."QuizProgress"."passed" FROM "public"."QuizProgress" WHERE 1=0 OFFSET $1
+📊 Query QuizProgress.findMany took 57ms
+🧪 Found 0 quiz progress records for user 086ee961-24a4-4967-810f-11151d435612
+⚠️ No enrollment data found for userId: 086ee961-24a4-4967-810f-11151d435612
+Error: Heartbeat timeout
+    at Heart.<anonymous> (/Users/jogues/Documents/HUB/student-management-service/node_modules/amqplib/lib/connection.js:379:21)
+    at Heart.emit (node:events:507:28)
+    at Heart.runHeartbeat (/Users/jogues/Documents/HUB/student-management-service/node_modules/amqplib/lib/heartbeat.js:88:7)
+    at listOnTimeout (node:internal/timers:611:17)
+    at processTimers (node:internal/timers:546:7)
+[ERROR] 02:10:16 Error: Heartbeat timeout
+🛑 Shutting down database connection...
+[90m2025-06-22 21:10:16[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-22 21:10:16[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connection closed
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 20:55:11 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Object.<anonymous> (/Users/jogues/Documents/HUB/student-management-service/index.ts:157:12)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/jogues/Documents/HUB/student-management-service/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-3301602581061187.js:69:33)
+    at loadTS (node:internal/modules/cjs/loader:1826:10)
+    at require.extensions.<computed> (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-3301602581061187.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/hook.js:63:13)
+[ERROR] 20:55:11 Error: listen EADDRINUSE: address already in use :::3003
+🛑 Shutting down database connection...
+[90m2025-06-26 15:55:11[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:11[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:11[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:11[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:11[0m [32m[1m[INFO][0m: [37mDatabase connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 20:55:43 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/enrollmentService.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 20:55:43 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+Error: write EPIPE
+    at process.target._send (node:internal/child_process:877:20)
+    at process.target.send (node:internal/child_process:751:19)
+    at Object.exports.send (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/ipc.js:17:14)
+    at /Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/wrap.js:88:9
+    at Object.nodeDevHook [as .ts] (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/hook.js:61:17)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mServer is running on port 3003[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connected successfully
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Object.<anonymous> (/Users/jogues/Documents/HUB/student-management-service/index.ts:157:12)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/jogues/Documents/HUB/student-management-service/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-8982396131978403.js:69:33)
+    at loadTS (node:internal/modules/cjs/loader:1826:10)
+    at require.extensions.<computed> (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-8982396131978403.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/hook.js:63:13)
+[ERROR] 20:55:43 Error: listen EADDRINUSE: address already in use :::3003
+🛑 Shutting down database connection...
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:43[0m [32m[1m[INFO][0m: [37mDatabase connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mQuiz completion consumer ready[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mSchool deletion consumer setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mEnrollment event publisher setup completed[0m[90m
+{
+  "metadata": {}
+}[0m
+🚀 Initializing SchoolDataRequestConsumer...
+🚀 Setting up SchoolDataRequestConsumer...
+✅ Exchange "school_events" declared
+✅ Queue "school_data_request_queue" declared
+✅ Queue bound to exchange with routing key "school.data.request"
+🎯 School data request consumer is ready and listening for messages
+✅ SchoolDataRequestConsumer initialized successfully
+🚀 Initializing UserDataRequestConsumer...
+🚀 Setting up UserDataRequestConsumer...
+✅ Exchange "user_events" declared
+✅ Queue "user_data_request_queue_course" declared
+✅ Queue bound to exchange with routing key "user.data.request"
+🎯 User data request consumer is ready and listening for messages
+✅ UserDataRequestConsumer initialized successfully
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mSuccessfully connected to RabbitMQ and setup all consumers/publishers[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mRabbitMQ connection established[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:44[0m [32m[1m[INFO][0m: [37mSocket.IO server initialized[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 20:55:50 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/rabbitmq.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[32m[nodemon] still waiting for 1 sub-process to finish...[39m
+[INFO] 20:55:50 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Object.<anonymous> (/Users/jogues/Documents/HUB/student-management-service/index.ts:157:12)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/jogues/Documents/HUB/student-management-service/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-7366844757080293.js:69:33)
+    at loadTS (node:internal/modules/cjs/loader:1826:10)
+    at require.extensions.<computed> (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-7366844757080293.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/hook.js:63:13)
+[ERROR] 20:55:51 Error: listen EADDRINUSE: address already in use :::3003
+🛑 Shutting down database connection...
+[90m2025-06-26 15:55:51[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:51[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:51[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:51[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:51[0m [32m[1m[INFO][0m: [37mDatabase connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[INFO] 20:55:58 Restarting: /Users/jogues/Documents/HUB/student-management-service/services/events/rabbitmq.ts has been modified
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node-dev --respawn --transpile-only index.ts`[39m
+[INFO] 20:55:59 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.5.4)
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+    at listenInCluster (node:net:1996:12)
+    at Server.listen (node:net:2101:7)
+    at Object.<anonymous> (/Users/jogues/Documents/HUB/student-management-service/index.ts:157:12)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1734:14)
+    at Module._compile (/Users/jogues/Documents/HUB/student-management-service/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-18005565932770895.js:69:33)
+    at loadTS (node:internal/modules/cjs/loader:1826:10)
+    at require.extensions.<computed> (/private/var/folders/n9/k5r0gy_57fld2lbjgf7c7zdc0000gn/T/ts-node-dev-hook-18005565932770895.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/jogues/Documents/HUB/student-management-service/node_modules/ts-node-dev/lib/hook.js:63:13)
+[ERROR] 20:55:59 Error: listen EADDRINUSE: address already in use :::3003
+🛑 Shutting down database connection...
+[90m2025-06-26 15:55:59[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:59[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:59[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:59[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:55:59[0m [32m[1m[INFO][0m: [37mDatabase connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 15:59:08[0m [32m[1m[INFO][0m: [37mGET /api/posts/stats 304 1703ms[0m[90m
+{
+  "metadata": {
+    "meta": {}
+  }
+}[0m
+[90m2025-06-26 16:01:16[0m [32m[1m[INFO][0m: [37mGET /api/posts/stats 304 803ms[0m[90m
+{
+  "metadata": {
+    "meta": {}
+  }
+}[0m
+prisma:query SELECT 1
+📊 Query undefined.queryRaw took 240ms
+prisma:query SELECT "public"."Enrollment"."id", "public"."Enrollment"."courseId", "public"."Enrollment"."status"::text, "public"."Enrollment"."progress" FROM "public"."Enrollment" WHERE "public"."Enrollment"."userEmail" = $1 OFFSET $2
+prisma:query SELECT "public"."Certificate"."id", "public"."Certificate"."enrollmentId", "public"."Certificate"."issuedAt", "public"."Certificate"."pdfUrl", "public"."Certificate"."verificationCode" FROM "public"."Certificate" WHERE "public"."Certificate"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."Payment"."id", "public"."Payment"."enrollmentId", "public"."Payment"."amount", "public"."Payment"."currency", "public"."Payment"."status"::text, "public"."Payment"."createdAt", "public"."Payment"."updatedAt", "public"."Payment"."paymentMethod", "public"."Payment"."transactionReference", "public"."Payment"."lastFourDigits", "public"."Payment"."tokenizedDetails" FROM "public"."Payment" WHERE "public"."Payment"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."Refund"."id", "public"."Refund"."enrollmentId", "public"."Refund"."amount", "public"."Refund"."status"::text, "public"."Refund"."requestedAt", "public"."Refund"."processedAt", "public"."Refund"."reason", "public"."Refund"."refundReference" FROM "public"."Refund" WHERE "public"."Refund"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."CourseProgress"."id", "public"."CourseProgress"."overallProgress", "public"."CourseProgress"."completedComponents", "public"."CourseProgress"."totalComponents", "public"."CourseProgress"."componentProgress", "public"."CourseProgress"."topicsProgress", "public"."CourseProgress"."lastUpdated", "public"."CourseProgress"."enrollmentId" FROM "public"."CourseProgress" WHERE "public"."CourseProgress"."enrollmentId" IN ($1,$2) OFFSET $3
+📊 Query Enrollment.findMany took 436ms
+[90m2025-06-26 16:01:35[0m [32m[1m[INFO][0m: [37mGET /api/enrollments/by-email?userEmail=fantastikabal%40gmail.com 304 678ms[0m[90m
+{
+  "metadata": {
+    "meta": {}
+  }
+}[0m
+prisma:query SELECT 1
+prisma:query SELECT 1
+📊 Query undefined.queryRaw took 58ms
+prisma:query SELECT "public"."Enrollment"."id", "public"."Enrollment"."courseId", "public"."Enrollment"."status"::text, "public"."Enrollment"."progress" FROM "public"."Enrollment" WHERE "public"."Enrollment"."userEmail" = $1 OFFSET $2
+prisma:query SELECT "public"."Certificate"."id", "public"."Certificate"."enrollmentId", "public"."Certificate"."issuedAt", "public"."Certificate"."pdfUrl", "public"."Certificate"."verificationCode" FROM "public"."Certificate" WHERE "public"."Certificate"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."Payment"."id", "public"."Payment"."enrollmentId", "public"."Payment"."amount", "public"."Payment"."currency", "public"."Payment"."status"::text, "public"."Payment"."createdAt", "public"."Payment"."updatedAt", "public"."Payment"."paymentMethod", "public"."Payment"."transactionReference", "public"."Payment"."lastFourDigits", "public"."Payment"."tokenizedDetails" FROM "public"."Payment" WHERE "public"."Payment"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."Refund"."id", "public"."Refund"."enrollmentId", "public"."Refund"."amount", "public"."Refund"."status"::text, "public"."Refund"."requestedAt", "public"."Refund"."processedAt", "public"."Refund"."reason", "public"."Refund"."refundReference" FROM "public"."Refund" WHERE "public"."Refund"."enrollmentId" IN ($1,$2) OFFSET $3
+prisma:query SELECT "public"."CourseProgress"."id", "public"."CourseProgress"."overallProgress", "public"."CourseProgress"."completedComponents", "public"."CourseProgress"."totalComponents", "public"."CourseProgress"."componentProgress", "public"."CourseProgress"."topicsProgress", "public"."CourseProgress"."lastUpdated", "public"."CourseProgress"."enrollmentId" FROM "public"."CourseProgress" WHERE "public"."CourseProgress"."enrollmentId" IN ($1,$2) OFFSET $3
+📊 Query Enrollment.findMany took 200ms
+[90m2025-06-26 16:05:04[0m [32m[1m[INFO][0m: [37mGET /api/enrollments/by-email?userEmail=fantastikabal%40gmail.com 304 261ms[0m[90m
+{
+  "metadata": {
+    "meta": {}
+  }
+}[0m
+[90m2025-06-26 16:05:05[0m [32m[1m[INFO][0m: [37mGET /api/posts/stats 304 768ms[0m[90m
+{
+  "metadata": {
+    "meta": {}
+  }
+}[0m
+🛑 Shutting down database connection...
+[90m2025-06-26 16:07:07[0m [32m[1m[INFO][0m: [37mShutdown signal received[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 16:07:07[0m [32m[1m[INFO][0m: [37mHTTP server closed[0m[90m
+{
+  "metadata": {}
+}[0m
+✅ Database connection closed
+[90m2025-06-26 16:07:07[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 16:07:07[0m [32m[1m[INFO][0m: [37mRabbitMQ connection closed[0m[90m
+{
+  "metadata": {}
+}[0m
+[90m2025-06-26 16:07:07[0m [32m[1m[INFO][0m: [37mDatabase connection closed[0m[90m
+{
+  "metadata": {}
+}[0m

@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: 'student-management-service'
+    container_name: usm
+    ports:
+      - "3003:3003"
+    env_file:
+      - .env
+    depends_on:
+      - ums_db
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:3003/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./tmp:/tmp
+    networks:
+      - proxy_network
+
+  ums_db:
+    image: postgres:15-alpine
+    container_name: ums_db_service
+    environment:
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgres_password
+      - POSTGRES_DB=database_name
+    volumes:
+      - ums_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres_user -d database_name"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - proxy_network
+
+volumes:
+  ums_postgres_data:
+
+networks:
+  proxy_network:
+    external: true

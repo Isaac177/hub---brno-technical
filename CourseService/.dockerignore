@@ -1,0 +1,28 @@
+# Git files - prevents the entire Git history from being copied
+.git/
+.gitignore
+.gitattributes
+)
+.gradle/
+dea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+.vscode/
+*.nbproject/ # NetBeans
+
+# Log files - Logs should be generated at runtime, not included in the image
+*.log
+logs/
+
+# Temporary files and directories
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,259 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Enrollment {
+  id             String           @id @default(uuid())
+  userId         String?
+  courseId       String
+  status         EnrollmentStatus @default(ON_HOLD)
+  enrolledAt     DateTime         @default(now())
+  lastAccessedAt DateTime         @updatedAt
+  completedAt    DateTime?
+  progress       Float?           @default(0)
+  transactionId  String?          @unique
+  amount         Decimal?
+  currency       String?
+  paymentStatus  PaymentStatus?
+  userEmail      String?
+  updatedAt      DateTime         @default(now())
+  certificate    Certificate?
+  payments       Payment[]
+  refunds        Refund[]
+  quizProgress   QuizProgress[]
+  courseProgress CourseProgress[]
+
+  @@unique([userId, courseId])
+  @@unique([userEmail, courseId])
+}
+
+model Certificate {
+  id               String     @id @default(uuid())
+  enrollmentId     String     @unique
+  issuedAt         DateTime   @default(now())
+  pdfUrl           String?
+  verificationCode String?    @unique
+  enrollment       Enrollment @relation(fields: [enrollmentId], references: [id])
+}
+
+model Payment {
+  id                   String        @id @default(uuid())
+  enrollmentId         String
+  amount               Decimal?
+  currency             String?
+  status               PaymentStatus
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  paymentMethod        String?
+  transactionReference String?       @unique
+  lastFourDigits       String?
+  tokenizedDetails     String?
+  enrollment           Enrollment    @relation(fields: [enrollmentId], references: [id])
+  revenueShare         RevenueShare?
+}
+
+model RevenueShare {
+  id            String   @id @default(uuid())
+  paymentId     String   @unique
+  schoolId      String
+  schoolShare   Decimal?
+  platformShare Decimal?
+  createdAt     DateTime @default(now())
+  payment       Payment  @relation(fields: [paymentId], references: [id])
+}
+
+model Payout {
+  id                 String       @id @default(uuid())
+  schoolId           String
+  amount             Decimal?
+  currency           String?
+  status             PayoutStatus
+  createdAt          DateTime     @default(now())
+  processedAt        DateTime?
+  bankAccountDetails String
+  payoutReference    String       @unique
+}
+
+model Refund {
+  id              String       @id @default(uuid())
+  enrollmentId    String
+  amount          Decimal
+  status          RefundStatus
+  requestedAt     DateTime     @default(now())
+  processedAt     DateTime?
+  reason          String
+  refundReference String       @unique
+  enrollment      Enrollment   @relation(fields: [enrollmentId], references: [id])
+}
+
+model QuizProgress {
+  id            String     @id @default(uuid())
+  enrollmentId  String
+  quizId        String
+  attempts      Int        @default(0)
+  bestScore     Float?
+  lastAttemptAt DateTime?
+  passed        Boolean    @default(false)
+  enrollment    Enrollment @relation(fields: [enrollmentId], references: [id])
+
+  @@unique([enrollmentId, quizId])
+}
+
+model CourseProgress {
+  id                  String     @id @default(uuid())
+  enrollmentId        String
+  courseId            String
+  userEmail           String
+  components          Json       @default("{}")
+  componentProgress   Json
+  totalComponents     Int
+  completedComponents Int
+  overallProgress     Float
+  topicsProgress      Json
+  lastUpdated         DateTime   @updatedAt
+  enrollment          Enrollment @relation(fields: [enrollmentId], references: [id])
+
+  @@unique([enrollmentId, courseId])
+  @@index([userEmail])
+  @@index([enrollmentId])
+}
+
+enum EnrollmentStatus {
+  ACTIVE
+  COMPLETED
+  DROPPED
+  ON_HOLD
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+enum PayoutStatus {
+  SCHEDULED
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum RefundStatus {
+  PENDING
+  APPROVED
+  PROCESSED
+  REJECTED
+}
+
+enum PostType {
+  NEWS
+  EVENT
+  DISCUSSION
+  ANNOUNCEMENT
+}
+
+enum PostStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model Post {
+  id           String     @id @default(uuid())
+  title        String
+  content      String     @db.Text
+  type         PostType   @default(DISCUSSION)
+  status       PostStatus @default(DRAFT)
+  slug         String     @unique
+  userId       String // Reference to UserService
+  authorName   String // Cached user data
+  authorAvatar String? // Cached user data
+  imageUrl     String?
+  categoryId   String?
+  category     Category?  @relation(fields: [categoryId], references: [id])
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  publishedAt  DateTime?
+  comments     Comment[]
+  likes        Like[]
+  views        View[]
+  tags         Tag[]
+
+  @@map("posts")
+}
+
+model Comment {
+  id         String   @id @default(uuid())
+  content    String
+  userId     String // Reference to UserService
+  authorName String // Cached user data
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId     String
+  isBlocked  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  likes      Like[]
+
+  parentComment Comment?  @relation("Replies", fields: [parentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  parentId      String?
+  replies       Comment[] @relation("Replies")
+
+  @@map("comments")
+}
+
+model Like {
+  id        String   @id @default(uuid())
+  userId    String // Reference to UserService
+  post      Post?    @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId    String?
+  comment   Comment? @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  commentId String?
+  createdAt DateTime @default(now())
+
+  @@unique([userId, postId, commentId])
+  @@map("likes")
+}
+
+model Category {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  posts       Post[]
+
+  @@map("categories")
+}
+
+model Tag {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  posts       Post[]
+
+  @@map("tags")
+}
+
+model View {
+  id            String   @id @default(uuid())
+  postId        String
+  userId        String // Reference to UserService
+  firstViewedAt DateTime @default(now())
+  lastViewedAt  DateTime @default(now())
+  visitCount    Int      @default(1)
+  post          Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([postId, userId])
+  @@map("views")
+}

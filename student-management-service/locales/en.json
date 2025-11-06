@@ -1,0 +1,29 @@
+{
+  "welcome": "Welcome to Student Management Service",
+  "error": {
+    "notFound": "{{resource}} not found",
+    "internalServer": "An internal server error occurred",
+    "badRequest": "Bad request: {{message}}"
+  },
+  "user": "User",
+  "course": "Course",
+  "unknown": "Unknown",
+  "enrollment": {
+    "courseNotAvailable": "Course is not available for enrollment",
+    "onlyStudents": "Only students can enroll in courses",
+    "prerequisiteNotCompleted": "Prerequisite course '{{course}}' not completed",
+    "invalidPayment": "Invalid payment amount or currency",
+    "createSuccess": "Enrollment created successfully",
+    "courseDuration": "{{weeks}} weeks",
+    "unknownCourse": "Unknown Course",
+    "enrollment": "Enrollment",
+    "invalidStatus": "Invalid enrollment status",
+    "updateSuccess": "Enrollment status updated successfully"
+  },
+  "certificate": {
+    "courseNotCompleted": "Course not completed",
+    "generateSuccess": "Certificate generated successfully",
+    "unknownCourse": "Unknown course",
+    "notFound": "Certificate not found"
+  }
+}

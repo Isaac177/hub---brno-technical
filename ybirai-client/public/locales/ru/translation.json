@@ -1,0 +1,1657 @@
+{
+  "common": {
+    "home": "Главная",
+    "news": "Новости",
+    "forum": "Форум",
+    "catalog": "Каталог",
+    "profile": "Профиль",
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "close": "Закрыть",
+    "lightMode": "Светлый режим",
+    "darkMode": "Темный режим",
+    "education": "Образование",
+    "dashboard": "Панель управления",
+    "required": "Обязательно",
+    "submitting": "Отправка...",
+    "loading": "Загрузка...",
+    "blogManagement": "Управление блогами"
+  },
+  "faq": {
+    "main": "Часто задаваемые вопросы",
+    "items": [
+      {
+        "question": "Как проходит обучение на платформе?",
+        "answer": "Обучение проходит онлайн. Студенты получают доступ к видеоматериалам, заданиям и тестам. У каждого курса есть свой ментор, который помогает на всех этапах."
+      },
+      {
+        "question": "Есть ли пробные уроки?",
+        "answer": "Да, мы предлагаем несколько бесплатных пробных уроков, чтобы вы могли оценить качество и структуру курса перед покупкой."
+      },
+      {
+        "question": "Как получить сертификат?",
+        "answer": "После успешного завершения курса и выполнения всех заданий вы получите сертификат, который подтверждает ваши навыки."
+      },
+      {
+        "question": "Могу ли я вернуть деньги, если курс не понравится?",
+        "answer": "Да, в течение 14 дней с момента покупки вы можете вернуть деньги, если курс вам не подошёл."
+      }
+    ]
+  },
+  "media": {
+    "upload": {
+      "preview": "Предварительный просмотр",
+      "replaceImage": "Нажмите или перетащите, чтобы заменить изображение",
+      "dropHere": "Перетащите изображение сюда",
+      "dragOrClick": "Перетащите изображение сюда или нажмите для выбора",
+      "supportedFormats": "Поддерживаемые форматы: JPEG, PNG. Максимальный размер: 5МБ",
+      "maxSizeExceeded": "Размер файла должен быть меньше {{size}}"
+    }
+  },
+  "imageUpload": {
+    "single": {
+      "dropHere": "Перетащите изображение сюда...",
+      "dragOrClick": "Перетащите изображение сюда или нажмите для выбора",
+      "altText": "Альт-текст"
+    },
+    "multiple": {
+      "dropHere": "Перетащите файлы сюда...",
+      "dragOrClick": "Перетащите файлы сюда или нажмите для выбора файлов",
+      "altText": "Альт-текст"
+    }
+  },
+  "tests": {
+    "card": {
+      "title": "Курс по обучению",
+      "lessons": "Школа - {{count}} занятие",
+      "lessons_2": "Школа - {{count}} занятия",
+      "lessons_5": "Школа - {{count}} занятий",
+      "takeTest": "Пройти тест",
+      "time": "Время: {{minutes}} мин"
+    }
+  },
+  "modal": {
+    "createTopic": "Создать тему",
+    "topicName": "Название темы",
+    "description": "Описание",
+    "cancel": "Отменить",
+    "submit": "Отправить"
+  },
+  "schools": {
+    "table": {
+      "ariaLabel": "Таблица школ",
+      "columns": {
+        "school": "ШКОЛА",
+        "founded": "ОСНОВАНА",
+        "contact": "КОНТАКТЫ",
+        "location": "РАСПОЛОЖЕНИЕ",
+        "status": "СТАТУС",
+        "actions": "ДЕЙСТВИЯ"
+      }
+    },
+    "status": {
+      "approved": "Одобрено",
+      "pending": "В ожидании",
+      "rejected": "Отклонено"
+    },
+    "actions": {
+      "view": "Просмотр",
+      "edit": "Редактировать"
+    },
+    "modal": {
+      "description": "Описание",
+      "details": "Детали",
+      "founded": "Основана",
+      "website": "Веб-сайт",
+      "email": "Email",
+      "phone": "Телефон",
+      "location": "Расположение",
+      "address": "Адрес",
+      "city": "Город",
+      "country": "Страна",
+      "status": "Статус"
+    }
+  },
+  "orders": {
+    "card": {
+      "title": "Курс по обучению",
+      "school": "Школа - в записи",
+      "pay": "Оплатить",
+      "duration": "{{minutes}} мин"
+    }
+  },
+  "footer": {
+    "starAlt": "Декоративная звезда",
+    "navigation": {
+      "title": "Навигация",
+      "aboutUs": "О нас",
+      "contacts": "Контакты",
+      "aboutSite": "О сайте",
+      "mission": "Наша миссия",
+      "payment": "Варианты оплаты"
+    },
+    "contacts": {
+      "title": "Контакты",
+      "address": "Казахстан, г. Алматы",
+      "phone": "+7 771 949 95 23",
+      "email": "Onlinekz@school.org",
+      "hours": "Пн-Сб 09:30 - 19:00"
+    },
+    "social": {
+      "title": "Мы в соцсетях"
+    }
+  },
+  "students": {
+    "title": "Студенты",
+    "searchPlaceholder": "Поиск студента"
+  },
+  "hero": {
+    "title": "Добро пожаловать в обучение",
+    "button": "Начать учиться"
+  },
+  "slider": {
+    "loading": "Загрузка школ...",
+    "error": "Ошибка загрузки школ. Пожалуйста, попробуйте позже.",
+    "noSchools": "В данный момент школы недоступны.",
+    "noApprovedSchools": "В данный момент нет одобренных школ.",
+    "topSchools": "топ онлайн школ"
+  },
+  "education": {
+    "allDirections": "Все направления",
+    "errorLoading": "Ошибка загрузки данных.",
+    "coursesUpdating": "Курсы обновляются",
+    "newCourses": "Новые курсы на горизонте! Они будут доступны в ближайшее время.",
+    "educationForEveryone": "Образование для каждого",
+    "more": "Ещё",
+    "priceNotSpecified": "Цена не указана",
+    "unknownCategory": "Неизвестная категория",
+    "unknownSchool": "Неизвестная школа",
+    "seeMoreCourses": "Смотреть больше курсов",
+    "noCourses": {
+      "title": "Курсы не найдены",
+      "description": "Вы еще не записаны ни на один курс. Просмотрите наш каталог, чтобы найти интересующие вас курсы."
+    },
+    "error": {
+      "fetchingCourses": "Ошибка при получении идентификаторов курсов"
+    }
+  },
+  "headerSection": {
+    "title": "YbyraiHUB — это онлайн-платформа для запуска и ведения корпоративного обучения с бесплатным подключением"
+  },
+  "professionForm": {
+    "title": "Поможем подобрать профессию",
+    "description": "Оставьте контактные данные и мы ответим на ваши вопросы и поможем найти соответствующий курс",
+    "namePlaceholder": "Имя",
+    "phonePlaceholder": "+77",
+    "emailPlaceholder": "Email",
+    "submitButton": "Отправить",
+    "submitting": "Отправка...",
+    "successMessage": "Спасибо! Мы свяжемся с вами в ближайшее время.",
+    "errorMessage": "Не удалось отправить сообщение. Попробуйте еще раз.",
+    "nameError": "Имя должно содержать не менее 2 символов",
+    "phoneError": "Пожалуйста, введите корректный номер телефона",
+    "emailError": "Пожалуйста, введите корректный email адрес"
+  },
+  "catalog": {
+    "loadingCourses": "Загрузка курсов...",
+    "errorLoadingData": "Ошибка загрузки данных",
+    "tryRefreshing": "Пожалуйста, попробуйте обновить страницу",
+    "noCoursesFound": "Курсы не найдены",
+    "noCoursesAvailable": "В данный момент нет доступных курсов",
+    "courseCatalog": "Каталог курсов",
+    "discoverCourses": "Откройте для себя удивительные курсы от ведущих учебных заведений",
+    "searchPlaceholder": "Поиск курсов...",
+    "filters": "Фильтры",
+    "clearAll": "Очистить все",
+    "showing": "Показано {{from}}-{{to}} из {{total}} курсов",
+    "pageInfo": "Страница {{current}} из {{total}}",
+    "tryAdjusting": "Попробуйте изменить фильтры или условия поиска",
+    "resetFilters": "Сбросить фильтры",
+    "previous": "Назад",
+    "next": "Вперед",
+    "refresh": "Обновить"
+  },
+  "filter": {
+    "profession": "Профессия",
+    "difficulty": "Сложность",
+    "price": "Цена",
+    "minPrice": "от, Т",
+    "maxPrice": "до, Т",
+    "duration": "Длительность",
+    "minDuration": "от, мес",
+    "maxDuration": "до, мес",
+    "resetFilters": "Сбросить фильтры",
+    "apply": "Применить",
+    "categories": "Категории",
+    "schools": "Школы",
+    "levels": {
+      "beginner": "Начинающий",
+      "intermediate": "Средний",
+      "advanced": "Продвинутый"
+    }
+  },
+  "courseDetailsModal": {
+    "duration": "Длительность",
+    "months": "месяцев",
+    "coursePrice": "Стоимость курса",
+    "enrollButton": "Записаться",
+    "close": "Закрыть"
+  },
+  "courseCard": {
+    "weeks": "недель",
+    "enroll": "Записаться",
+    "lessons": "уроков",
+    "modules": "модулей",
+    "more": "ещё",
+    "free": "Бесплатно",
+    "instructors": "преподавателей",
+    "continueLearning": "Продолжить обучение",
+    "enrolled": "Записан",
+    "level": {
+      "notSpecified": "Уровень не указан"
+    },
+    "language": {
+      "notSpecified": "Язык не указан"
+    },
+    "enrollmentDialog": {
+      "title": "Запись на курс",
+      "duration": "Длительность",
+      "price": "Цена",
+      "description": "Описание курса",
+      "notSpecified": "Не указано",
+      "cancel": "Отмена",
+      "confirmEnroll": "Подтвердить запись",
+      "enrolling": "Записываемся...",
+      "error": {
+        "title": "Ошибка",
+        "courseNotFound": "Данные курса не найдены",
+        "loadingError": "Ошибка загрузки данных курса",
+        "alreadyEnrolled": "Вы уже записаны на этот курс",
+        "enrollmentError": "Ошибка при записи на курс"
+      },
+      "success": "Вы успешно записались на курс!"
+    }
+  },
+  "news": {
+    "title": "Новости",
+    "description": "Актуальная информация про обучение в IT-сфере. Рассказываем про тренды в IT, рейтинги языков программирования, советы и рекомендации по выбору IT-профессий и многое другое.",
+    "allCategories": "Все категории",
+    "noPostsFound": "Новости не найдены",
+    "tryDifferentCategory": "Попробуйте выбрать другую категорию",
+    "newsAndEvents": "Новости и события",
+    "selectCategory": "Выберите категорию",
+    "header": {
+      "lightsAlt": "Декоративные огни",
+      "starAlt": "Декоративная звезда",
+      "decorativeIcon": "Декоративная иконка {{number}}"
+    },
+    "error": {
+      "loadingArticle": "Ошибка загрузки статьи",
+      "postNotFound": "Статья не найдена",
+      "goBack": "Вернуться назад",
+      "userNotAuthenticated": "Пользователь не аутентифицирован"
+    },
+    "shareButtons": {
+      "share": "Поделиться"
+    },
+    "comments": {
+      "title": "Комментарии",
+      "noComments": "Пока нет комментариев",
+      "addComment": "Добавить комментарий",
+      "loading": "Загрузка комментариев..."
+    },
+    "post": {
+      "tags": "Теги",
+      "readMore": "Читать далее",
+      "publishedOn": "Опубликовано"
+    },
+    "metrics": {
+      "views": "Просмотры",
+      "likes": "Лайки",
+      "comments": "Комментарии"
+    }
+  },
+  "forum": {
+    "title": "Форум",
+    "description": "Обсуждайте актуальные темы в IT-сфере, делитесь опытом и получайте ответы на ваши вопросы от сообщества.",
+    "discussions": "Обсуждения форума",
+    "loading": "Загрузка обсуждений...",
+    "noDiscussions": "Обсуждения не найдены",
+    "search": {
+      "placeholder": "Поиск обсуждений...",
+      "noResults": "Результаты не найдены"
+    },
+    "categories": {
+      "all": "Все категории",
+      "title": "Категории",
+      "selectCategory": "Выбрать категорию"
+    },
+    "post": {
+      "notFound": "Пост не найден",
+      "anonymous": "Аноним",
+      "share": "Поделиться",
+      "discussions": "Обсуждения",
+      "loginToLike": "Пожалуйста, войдите, чтобы ставить лайки",
+      "replies": "ответов",
+      "page": "Страница",
+      "of": "из"
+    },
+    "actions": {
+      "like": "Нравится",
+      "comment": "Комментировать",
+      "share": "Поделиться",
+      "report": "Пожаловаться",
+      "delete": "Удалить"
+    },
+    "comments": {
+      "title": "Комментарии",
+      "noComments": "Пока нет комментариев",
+      "addComment": "Добавить комментарий",
+      "loading": "Загрузка комментариев..."
+    },
+    "errors": {
+      "loadingFailed": "Не удалось загрузить обсуждения",
+      "likeFailed": "Не удалось обновить лайк"
+    },
+    "sidebar": {
+      "overview": {
+        "title": "Обзор форума",
+        "totalDiscussions": "Всего обсуждений",
+        "totalLikes": "Всего лайков",
+        "totalViews": "Всего просмотров"
+      },
+      "categories": {
+        "title": "Популярные категории",
+        "posts": "постов"
+      },
+      "trending": {
+        "title": "Популярные обсуждения"
+      },
+      "activity": {
+        "title": "Последняя активность",
+        "liked": "понравилось",
+        "commentedOn": "прокомментировал",
+        "anonymous": "Аноним"
+      }
+    },
+    "leftSidebar": {
+      "search": "Поиск обсуждений...",
+      "createDiscussion": "Создать обсуждение",
+      "navigation": {
+        "allDiscussions": "Все обсуждения",
+        "discussions": "Обсуждения",
+        "events": "События",
+        "announcements": "Объявления"
+      },
+      "categories": "Категории"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Войти",
+      "email": "Email",
+      "password": "Пароль",
+      "forgotPassword": "Забыли пароль?",
+      "signIn": "Войти",
+      "noAccount": "Нет аккаунта?",
+      "signUp": "Зарегистрироваться",
+      "withGoogle": "С помощью Google",
+      "or": "или",
+      "loginToEnroll": "Войдите, чтобы записаться на курс",
+      "error": "Ошибка входа",
+      "socialLoginError": "Ошибка входа через {{provider}}"
+    },
+    "register": {
+      "title": "Зарегистрироваться",
+      "email": "Email",
+      "password": "Пароль",
+      "confirmPassword": "Подтвердите пароль",
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "middleName": "Отчество",
+      "signUp": "Зарегистрироваться",
+      "withGoogle": "С помощью Google",
+      "haveAccount": "Уже есть аккаунт?",
+      "signIn": "Войти",
+      "registering": "Регистрация...",
+      "success": "Регистрация успешна",
+      "errors": {
+        "passwordMatch": "Пароли не совпадают",
+        "passwordLength": "Пароль должен быть не менее 8 символов",
+        "passwordRequirements": "Пароль должен содержать как минимум одну заглавную букву, одну строчную букву, одну цифру и один специальный символ",
+        "emailExists": "Этот email уже зарегистрирован",
+        "invalidPassword": "Пароль должен быть не менее 8 символов и содержать заглавные, строчные буквы, цифры и специальные символы",
+        "generic": "Ошибка регистрации"
+      }
+    },
+    "forgotPassword": {
+      "title": "Сброс пароля",
+      "returnToLogin": "Вернуться к входу",
+      "or": "Или",
+      "email": "Email адрес",
+      "verificationCode": "Код подтверждения",
+      "newPassword": "Новый пароль",
+      "confirmPassword": "Подтвердите новый пароль",
+      "sendCode": "Отправить код",
+      "resetPassword": "Сбросить пароль",
+      "codeSent": "Код подтверждения отправлен на ваш email.",
+      "resetSuccess": "Пароль успешно сброшен. Пожалуйста, войдите с новым паролем.",
+      "errors": {
+        "sendCode": "Не удалось отправить код подтверждения",
+        "resetPassword": "Не удалось сбросить пароль",
+        "passwordMatch": "Пароли не совпадают",
+        "passwordLength": "Пароль должен быть не менее 8 символов",
+        "passwordRequirements": "Пароль должен содержать как минимум одну заглавную букву, одну строчную букву, одну цифру и один специальный символ"
+      }
+    },
+    "verifyEmail": {
+      "title": "Подтвердите ваш email",
+      "sentTo": "Мы отправили код подтверждения на",
+      "enterCode": "Введите код подтверждения",
+      "verify": "Подтвердить email",
+      "verifying": "Проверка...",
+      "resendCode": "Отправить код повторно",
+      "codeSent": "Новый код подтверждения отправлен на ваш email",
+      "errors": {
+        "verificationFailed": "Ошибка подтверждения",
+        "invalidCode": "Неверный код подтверждения",
+        "expiredCode": "Срок действия кода истек",
+        "resendFailed": "Не удалось отправить код повторно"
+      }
+    }
+  },
+  "course": {
+    "notFound": "Курс не найден",
+    "notFoundDescription": "Запрошенный курс не найден",
+    "loading": "Загрузка курса...",
+    "progress": {
+      "loading": "Загрузка прогресса...",
+      "title": "Общий прогресс курса",
+      "overall": "Общее выполнение",
+      "completed": "{{completed}} из {{total}} завершенных заданий",
+      "videos": "Видео-уроки",
+      "quizzes": "Тесты",
+      "score": "Баллы",
+      "progressPercent": "Прогресс: {{percent}}%",
+      "lastUpdated": "Последнее обновление: {{date}}",
+      "noDate": "Дата недоступна",
+      "noVideos": "Прогресс видео пока недоступен",
+      "noQuizzes": "Прогресс тестов пока недоступен",
+      "error": {
+        "title": "Ошибка загрузки прогресса",
+        "message": "Не удалось загрузить данные прогресса. Пожалуйста, попробуйте позже."
+      },
+      "noData": {
+        "title": "Нет данных прогресса",
+        "message": "Данные прогресса для этого курса пока недоступны. Начните обучение, чтобы увидеть свой прогресс!"
+      },
+      "status": {
+        "completed": "Завершен",
+        "inProgress": "Выполняется"
+      }
+    },
+    "overview": {
+      "title": "Обзор курса",
+      "description": "Подробная информация о курсе и учебной программе",
+      "currentLesson": "Текущий урок",
+      "selectLesson": "Выберите урок для начала",
+      "lessonDescription": "Описание урока"
+    },
+    "chatAssistant": "Чат-ассистент",
+    "backToCourses": "Назад к курсам",
+    "selectVideoPrompt": "Выберите видео, чтобы начать обучение",
+    "learningObjectives": "Цели обучения",
+    "courseContent": "Содержание курса",
+    "courseInfo": {
+      "title": "Информация о курсе",
+      "description": "Описание курса",
+      "objectives": "Цели обучения"
+    },
+    "videoPlayer": {
+      "duration": "Длительность",
+      "noContent": "Контент недоступен",
+      "completion": "Прогресс"
+    },
+    "syllabus": {
+      "section": "Раздел",
+      "topic": "Тема",
+      "loadError": "Не удалось загрузить учебный план курса",
+      "preview": "Предпросмотр",
+      "lectures": "{{count}} лекция",
+      "lectures_2": "{{count}} лекции",
+      "lectures_5": "{{count}} лекций",
+      "questions": "{{count}} вопрос",
+      "questions_2": "{{count}} вопроса",
+      "questions_5": "{{count}} вопросов"
+    },
+    "banner": {
+      "bestseller": "Бестселлер",
+      "lastUpdated": "Последнее обновление",
+      "students": "студентов",
+      "enrollNow": "Записаться сейчас"
+    },
+    "requirements": {
+      "title": "Требования"
+    },
+    "description": {
+      "title": "О курсе"
+    },
+    "reviews": {
+      "title": "Отзывы студентов",
+      "courses": "курсов",
+      "reviews": "отзывов",
+      "noReviews": "Пока нет отзывов"
+    },
+    "instructor": {
+      "title": "Преподаватель курса",
+      "rating": "Рейтинг преподавателя",
+      "students": "Студенты",
+      "courses": "Курсы",
+      "reviews": "Отзывы",
+      "noInfo": "Информация о преподавателе недоступна"
+    },
+    "stickyCard": {
+      "totalLength": "общая длительность",
+      "sections": "разделов",
+      "lectures": "лекций",
+      "enrollNow": "Записаться сейчас",
+      "moneyBack": "30-дневная гарантия возврата денег",
+      "certificate": "Сертификат об окончании",
+      "includes": "Этот курс включает:"
+    },
+    "duration": {
+      "notSpecified": "Не указано"
+    },
+    "instructors": "{{count}} преподаватель",
+    "instructors_1": "{{count}} преподаватель",
+    "instructors_2": "{{count}} преподавателя",
+    "instructors_5": "{{count}} преподавателей",
+    "sidebar": {
+      "overview": "Обзор",
+      "syllabus": "Учебный план",
+      "quizzes": "Тесты",
+      "progress": "Прогресс",
+      "courseContent": "Содержание курса",
+      "watchVideo": "Посмотрите видео ({{progress}}%)",
+      "completed": "Завершен",
+      "courseDuration": "Длительность курса",
+      "selfPaced": "В своем темпе",
+      "sectionsCount": "Кол-во секций",
+      "topicsCount": "Кол-во тем",
+      "videoPlayer": "Видеоплеер",
+      "videoPlayerDescription": "Видеоплеер для выбранной темы курса",
+      "courseMenu": "Меню курса",
+      "learningMaterials": "Учебные материалы",
+      "overviewDescription": "Детали курса и информация",
+      "syllabusDescription": "Учебная программа и структура курса",
+      "quizzesDescription": "Практические тесты и оценки",
+      "progressDescription": "Отслеживайте свой прогресс в обучении",
+      "courseStats": "Статистика курса"
+    },
+    "quizzes": {
+      "title": "Тесты курса",
+      "noQuizzes": {
+        "title": "Тесты не найдены",
+        "description": "Для этого курса пока нет доступных тестов"
+      },
+      "difficulty": {
+        "beginner": "Начинающий",
+        "intermediate": "Средний",
+        "advanced": "Продвинутый"
+      },
+      "stats": {
+        "questions": "{{count}} вопрос",
+        "questions_2": "{{count}} вопроса",
+        "questions_5": "{{count}} вопросов",
+        "minutes": "{{count}} минута",
+        "minutes_2": "{{count}} минуты",
+        "minutes_5": "{{count}} минут",
+        "passingScore": "{{score}}% для прохождения"
+      },
+      "startQuiz": "Начать тест"
+    }
+  },
+  "courseProgress": {
+    "title": "Ваш прогресс",
+    "lastUpdated": "Последнее обновление",
+    "never": "Никогда",
+    "overall": {
+      "title": "Общий прогресс",
+      "description": "{{completed}} из {{total}} заданий выполнено"
+    },
+    "videos": {
+      "title": "Видео уроки",
+      "completed": "Просмотрено"
+    },
+    "quizzes": {
+      "title": "Тестирование",
+      "completed": "Завершено"
+    },
+    "summary": {
+      "totalTasks": "{{completed}}/{{total}} заданий выполнено"
+    },
+    "requirements": {
+      "title": "Требования"
+    },
+    "objectives": {
+      "title": "Цели обучения"
+    }
+  },
+  "blogDashboard": {
+    "title": "Панель блога",
+    "download": "Скачать",
+    "stats": {
+      "totalPosts": "Всего постов",
+      "totalComments": "Всего комментариев",
+      "totalLikes": "Всего лайков",
+      "totalViews": "Всего просмотров",
+      "thisMonth": "в этом месяце"
+    },
+    "charts": {
+      "engagementOverview": "Обзор вовлеченности",
+      "metrics": {
+        "posts": "Посты",
+        "comments": "Комментарии",
+        "likes": "Лайки",
+        "views": "просмотров"
+      }
+    },
+    "topPosts": {
+      "title": "Популярные посты",
+      "stats": {
+        "views": "просмотров",
+        "comments": "комментариев",
+        "likes": "лайков"
+      }
+    },
+    "categories": {
+      "title": "Посты по категориям",
+      "count": "Количество"
+    },
+    "activity": {
+      "title": "Последняя активность",
+      "actions": {
+        "commented": "прокомментировал",
+        "liked": "понравилось"
+      }
+    },
+    "status": {
+      "title": "Посты по статусу",
+      "draft": "Черновик",
+      "published": "Опубликован",
+      "archived": "В архиве"
+    }
+  },
+  "blogManagement": {
+    "posts": {
+      "title": "Управление постами",
+      "newPost": "Новый пост",
+      "loading": "Загрузка постов...",
+      "error": "Ошибка загрузки постов: {{message}}",
+      "noPostsFound": "Посты не найдены",
+      "tryAdjustingFilters": "Попробуйте изменить фильтры",
+      "filters": {
+        "type": {
+          "label": "Фильтр по типу",
+          "all": "Все типы",
+          "news": "Новости",
+          "event": "Событие",
+          "discussion": "Обсуждение",
+          "announcement": "Объявление"
+        },
+        "status": {
+          "label": "Фильтр по статусу",
+          "all": "Все статусы",
+          "draft": "Черновик",
+          "published": "Опубликован",
+          "archived": "В архиве"
+        }
+      },
+      "table": {
+        "title": "Заголовок",
+        "type": "Тип",
+        "status": "Статус",
+        "author": "Автор",
+        "category": "Категория",
+        "published": "Опубликовано",
+        "engagement": "Вовлеченность",
+        "actions": "Действия"
+      },
+      "totalPosts": "Всего постов: {{count}}",
+      "deleteDialog": {
+        "title": "Удаление поста",
+        "description": "Вы уверены, что хотите удалить этот пост?",
+        "confirm": "Удалить",
+        "cancel": "Отмена"
+      }
+    },
+    "categories": {
+      "title": "Управление категориями",
+      "addCategory": "Добавить категорию",
+      "editCategory": "Редактировать категорию",
+      "loading": "Загрузка категорий...",
+      "error": "Ошибка загрузки категорий",
+      "form": {
+        "name": "Название",
+        "description": "Описание",
+        "create": "Создать",
+        "update": "Обновить"
+      },
+      "table": {
+        "name": "Название",
+        "description": "Описание",
+        "posts": "Посты",
+        "actions": "Действия"
+      },
+      "deleteConfirm": "Вы уверены, что хотите удалить эту категорию?"
+    },
+    "comments": {
+      "title": "Управление комментариями",
+      "subtitle": "Модерация комментариев, просмотр взаимодействий пользователей и поддержание правил сообщества.",
+      "loading": "Загрузка комментариев...",
+      "error": "Ошибка загрузки комментариев",
+      "noComments": "Комментарии не найдены",
+      "noCommentsDescription": "Нет комментариев для отображения.",
+      "refreshing": "Обновление...",
+      "table": {
+        "author": "Автор",
+        "content": "Содержание",
+        "post": "Пост",
+        "likes": "Лайки",
+        "date": "Дата",
+        "status": "Статус",
+        "actions": "Действия"
+      },
+      "status": {
+        "blocked": "Заблокирован",
+        "active": "Активный"
+      },
+      "actions": {
+        "view": "Просмотр",
+        "block": "Заблокировать",
+        "unblock": "Разблокировать",
+        "delete": "Удалить"
+      },
+      "confirmDelete": "Вы уверены, что хотите удалить этот комментарий?",
+      "deleteSuccess": "Комментарий успешно удален",
+      "deleteError": "Не удалось удалить комментарий",
+      "statusUpdateSuccess": "Статус комментария успешно обновлен",
+      "statusUpdateError": "Не удалось обновить статус комментария"
+    }
+  },
+  "schoolManagement": {
+    "mySchools": "Мои школы",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "noWebsite": "Нет веб-сайта",
+    "noLocation": "Нет местоположения",
+    "courses": "Курсы",
+    "createSchool": "Создать школу",
+    "createCourse": "Создать курс",
+    "schoolDashboard": {
+      "title": "Школы",
+      "description": "Управление школами и их настройками",
+      "searchPlaceholder": "Поиск школы...",
+      "table": {
+        "name": "Название",
+        "description": "Описание",
+        "status": "Статус",
+        "actions": "Действия",
+        "logo": "Логотип"
+      },
+      "status": {
+        "active": "Активный",
+        "inactive": "Неактивный"
+      },
+      "actions": {
+        "edit": "Редактировать школу",
+        "delete": "Удалить школу"
+      },
+      "deleteDialog": {
+        "title": "Удаление школы",
+        "description": "Вы уверены, что хотите удалить эту школу? Это действие нельзя отменить.",
+        "confirm": "Удалить",
+        "cancel": "Отмена"
+      }
+    }
+  },
+  "allQuizzes": {
+    "title": "Все тесты",
+    "loading": "Загрузка...",
+    "searchPlaceholder": "Поиск тестов по названию...",
+    "selectCourse": "Выберите курс",
+    "difficultyLevel": {
+      "label": "Уровень сложности",
+      "all": "Все уровни",
+      "beginner": "Начальный",
+      "intermediate": "Средний",
+      "advanced": "Продвинутый"
+    },
+    "table": {
+      "quizTitle": "Название теста",
+      "course": "Курс",
+      "difficulty": "Сложность",
+      "timeLimit": "Ограничение времени",
+      "passingScore": "Проходной балл",
+      "status": "Статус",
+      "minutes": "минут",
+      "unknownCourse": "Неизвестный курс",
+      "noQuizzes": "Тесты не найдены",
+      "draft": "Черновик",
+      "published": "Опубликован"
+    },
+    "actions": {
+      "viewQuiz": "Просмотр теста",
+      "editQuiz": "Редактировать тест",
+      "deleteQuiz": "Удалить тест"
+    },
+    "dialog": {
+      "quizDetails": "Детали теста",
+      "description": "Описание",
+      "helpGuidelines": "Инструкции",
+      "timeLimit": "Ограничение времени",
+      "passingScore": "Проходной балл",
+      "questions": "Вопросы",
+      "noQuestions": "Вопросы не найдены",
+      "question": "Вопрос",
+      "type": "Тип",
+      "points": "Баллы",
+      "explanation": "Объяснение",
+      "correctAnswer": "Правильный ответ"
+    },
+    "deleteConfirm": {
+      "title": "Удаление теста",
+      "description": "Вы уверены, что хотите удалить \"{{quizTitle}}\"? Это действие нельзя отменить.",
+      "confirm": "Удалить",
+      "cancel": "Отмена"
+    }
+  },
+  "createQuiz": {
+    "title": {
+      "create": "Создать тест",
+      "edit": "Редактировать тест"
+    },
+    "courseInfo": {
+      "courseId": "ID курса из URL",
+      "availableTopics": "Доступные темы"
+    },
+    "form": {
+      "topic": {
+        "label": "Тема (Обязательно)",
+        "placeholder": "Выберите тему"
+      },
+      "title": {
+        "label": "Название (Обязательно)",
+        "placeholder": "Введите название теста"
+      },
+      "difficultyLevel": {
+        "label": "Уровень сложности (Обязательно)",
+        "placeholder": "Выберите уровень сложности",
+        "beginner": "Начальный",
+        "intermediate": "Средний",
+        "advanced": "Продвинутый"
+      },
+      "visibility": {
+        "label": "Видимость (Обязательно)",
+        "placeholder": "Выберите видимость",
+        "public": "Публичный",
+        "private": "Приватный",
+        "classOnly": "Только для класса"
+      },
+      "timeLimit": {
+        "label": "Ограничение времени (Опционально)",
+        "unit": "мин"
+      },
+      "description": {
+        "label": "Описание (Опционально)",
+        "placeholder": "Введите описание теста"
+      },
+      "passingScore": {
+        "label": "Проходной балл (Обязательно)"
+      },
+      "totalPoints": {
+        "label": "Общее количество баллов (Обязательно)"
+      },
+      "helpGuidelines": {
+        "label": "Инструкции (Опционально)",
+        "placeholder": "Введите инструкции"
+      }
+    },
+    "questions": {
+      "title": "Управление вопросами",
+      "type": {
+        "label": "Тип вопроса",
+        "placeholder": "Выберите тип вопроса",
+        "multipleChoice": "Множественный выбор",
+        "trueFalse": "Верно/Неверно",
+        "shortAnswer": "Короткий ответ"
+      },
+      "points": {
+        "label": "Баллы"
+      },
+      "text": {
+        "label": "Текст вопроса",
+        "placeholder": "Введите ваш вопрос здесь"
+      },
+      "options": {
+        "label": "Варианты ответов",
+        "placeholder": "Вариант {{number}}"
+      },
+      "correctAnswer": {
+        "label": "Правильный ответ",
+        "placeholder": {
+          "select": "Выберите правильный ответ",
+          "enter": "Введите правильный ответ"
+        },
+        "true": "Верно",
+        "false": "Неверно"
+      },
+      "explanation": {
+        "label": "Объяснение (Опционально)",
+        "placeholder": "Объясните, почему это правильный ответ"
+      },
+      "buttons": {
+        "add": "Добавить вопрос",
+        "update": "Обновить вопрос",
+        "cancelEdit": "Отменить редактирование"
+      }
+    },
+    "addedQuestions": {
+      "title": "Добавленные вопросы",
+      "question": "Вопрос {{number}}",
+      "type": "Тип",
+      "points": "Баллы",
+      "buttons": {
+        "edit": "Редактировать",
+        "delete": "Удалить"
+      }
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "create": "Создать тест",
+      "update": "Обновить тест",
+      "creating": "Создание..."
+    },
+    "validation": {
+      "questionType": "Тип вопроса обязателен",
+      "questionText": "Текст вопроса обязателен",
+      "options": "Требуется минимум 2 варианта ответа",
+      "correctAnswer": "Правильный ответ обязателен",
+      "points": "Баллы должны быть не менее 1",
+      "topic": "Тема обязательна",
+      "title": "Название обязательно",
+      "difficultyLevel": "Уровень сложности обязателен",
+      "timeLimit": "Ограничение времени должно быть не менее 1 минуты",
+      "passingScore": {
+        "required": "Проходной балл обязателен",
+        "range": "Проходной балл должен быть от 0 до 100"
+      },
+      "totalPoints": "Общее количество баллов должно быть не менее 1",
+      "visibility": "Видимость обязательна",
+      "questions": {
+        "required": "Требуется минимум один вопрос",
+        "pointsSum": "Сумма баллов должна соответствовать общему количеству баллов"
+      }
+    },
+    "messages": {
+      "questionRequired": "Текст вопроса обязателен",
+      "correctAnswerRequired": "Пожалуйста, выберите правильный ответ",
+      "totalPointsExceeded": "Общее количество баллов ({{total}}) превышает общее количество баллов теста ({{max}})",
+      "correctAnswerMatch": "Правильный ответ должен точно соответствовать одному из вариантов",
+      "questionAdded": "Вопрос успешно добавлен",
+      "questionUpdated": "Вопрос успешно обновлен",
+      "questionDeleted": "Вопрос успешно удален",
+      "loading": "Загрузка данных курса...",
+      "error": "Ошибка",
+      "retry": "Повторить"
+    }
+  },
+  "quizDetails": {
+    "error": {
+      "title": "Ошибка",
+      "quizNotFound": "Информация о тесте не найдена",
+      "loadingError": "Ошибка загрузки деталей теста"
+    },
+    "loading": "Загрузка...",
+    "details": {
+      "title": "Детали теста",
+      "description": "Описание",
+      "helpGuidelines": "Инструкции",
+      "timeLimit": "Ограничение времени",
+      "passingScore": "Проходной балл",
+      "minutes": "минут"
+    },
+    "questions": {
+      "title": "Вопросы",
+      "noQuestions": "Вопросы не найдены",
+      "question": "Вопрос",
+      "type": "Тип",
+      "points": "Баллы",
+      "explanation": "Объяснение"
+    }
+  },
+  "quiz": {
+    "student": {
+      "title": "Тест",
+      "timeLimit": "{{minutes}} минут",
+      "passingScore": "Проходной балл: {{score}}%",
+      "question": "Вопрос {{number}}",
+      "points": "Баллы: {{count}}",
+      "answerPlaceholder": "Введите ваш ответ здесь...",
+      "submit": "Отправить тест"
+    },
+    "cancel": {
+      "title": "Отменить тест?",
+      "description": "Вы уверены, что хотите отменить тест? Ваш прогресс будет потерян.",
+      "continueButton": "Продолжить тест",
+      "cancelButton": "Отменить тест"
+    },
+    "result": {
+      "title": "Результаты теста",
+      "submitting": "Отправка теста...",
+      "gradingMessage": "Пожалуйста, подождите, пока мы проверяем ваши ответы...",
+      "congratulations": "Поздравляем!",
+      "passedMessage": "Вы прошли тест с результатом {{score}}/{{total}}!",
+      "failedMessage": "Ваш результат: {{score}}/{{total}}. Продолжайте тренироваться!",
+      "attempt": "Попытка #{{number}}",
+      "returnButton": "Вернуться к курсу"
+    },
+    "timeDisplay": {
+      "title": "Оставшееся время"
+    },
+    "intro": {
+      "backToQuizzes": "Назад к тестам",
+      "timeLimit": "Ограничение времени: {{minutes}} минут",
+      "questions": "Вопросов: {{count}}",
+      "passingScore": "Проходной балл: {{score}}%",
+      "termsAgreement": "Я согласен не использовать внешние ресурсы или помощь во время этого теста. Я понимаю, что моя попытка будет записана.",
+      "startQuiz": "Начать тест"
+    }
+  },
+  "school": {
+    "logo": {
+      "preview": "Предварительный просмотр логотипа школы",
+      "removeSuccess": "Логотип будет удален после сохранения"
+    },
+    "error": {
+      "missingId": "Отсутствует ID школы"
+    },
+    "update": {
+      "loading": "Обновление школы...",
+      "success": "Школа успешно обновлена",
+      "error": "Не удалось обновить школу",
+      "inProgress": "Обновление...",
+      "button": "Обновить школу"
+    },
+    "create": {
+      "loading": "Создание школы...",
+      "success": "Школа успешно создана",
+      "error": "Не удалось создать школу",
+      "inProgress": "Создание...",
+      "button": "Создать школу"
+    },
+    "form": {
+      "logo": "Логотип школы",
+      "name": "Название школы",
+      "description": "Описание",
+      "website": "Веб-сайт",
+      "foundedYear": "Год основания",
+      "address": "Адрес",
+      "city": "Город",
+      "country": "Страна",
+      "phone": "Номер телефона",
+      "email": "Электронная почта"
+    },
+    "validation": {
+      "nameRequired": "Требуется указать название школы",
+      "descriptionRequired": "Требуется указать описание",
+      "websiteRequired": "Требуется указать веб-сайт",
+      "foundedYearRequired": "Требуется указать год основания",
+      "foundedYearInvalid": "Пожалуйста, введите действительный год",
+      "addressRequired": "Требуется указать адрес",
+      "cityRequired": "Требуется указать город",
+      "countryRequired": "Требуется указать страну",
+      "phoneRequired": "Требуется указать номер телефона",
+      "emailRequired": "Требуется указать электронную почту"
+    }
+  },
+  "enrollment": {
+    "title": "Все заявки на зачисление",
+    "subtitle": "Просмотр и управление заявками студентов на зачисление на ваши курсы",
+    "status": {
+      "label": "Статус",
+      "filterPlaceholder": "Фильтр по статусу",
+      "all": "Все статусы",
+      "onHold": "В ожидании",
+      "active": "Активный",
+      "completed": "Завершен",
+      "validated": "Подтвержден"
+    },
+    "empty": {
+      "all": "Заявки не найдены",
+      "filtered": "Нет заявок со статусом {{status}}",
+      "allDescription": "В настоящее время нет заявок на рассмотрение",
+      "filteredDescription": "В настоящее время нет заявок со статусом {{status}}"
+    },
+    "course": {
+      "notFound": "Курс не найден",
+      "noDescription": "Описание отсутствует"
+    },
+    "user": {
+      "student": "Студент"
+    },
+    "action": {
+      "viewDetails": "Просмотр деталей"
+    },
+    "dialog": {
+      "title": "Детали заявки на зачисление",
+      "description": "Просмотр и одобрение заявки на зачисление",
+      "courseInfo": "Информация о курсе",
+      "studentInfo": "Информация о студенте",
+      "email": "Электронная почта",
+      "role": "Роль",
+      "status": "Статус",
+      "cancel": "Отмена",
+      "approving": "Одобрение...",
+      "approve": "Одобрить заявку"
+    },
+    "activation": {
+      "success": "Зачисление успешно активировано",
+      "error": "Не удалось активировать зачисление"
+    }
+  },
+  "schoolCoursesManage": {
+    "title": "Управление курсами школы",
+    "noCourses": "Для этой школы не найдено курсов",
+    "courseDetails": {
+      "price": "Цена",
+      "language": "Язык",
+      "courseInfo": "Информация о курсе",
+      "requirements": "Требования",
+      "learningObjectives": "Цели обучения",
+      "courseContent": "Содержание курса",
+      "aboutCourse": "О курсе",
+      "featuredImage": "Главное изображение",
+      "thumbnailImage": "Миниатюра",
+      "duration": "Длительность"
+    },
+    "actions": {
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "back": "Назад"
+    }
+  },
+  "courseForm": {
+    "title": {
+      "update": "Обновить курс",
+      "create": "Создать курс"
+    },
+    "navigation": {
+      "previous": "Назад",
+      "next": "Далее"
+    },
+    "steps": {
+      "basicInfo": "Основная информация",
+      "media": "Медиа",
+      "content": "Содержание",
+      "pricing": "Стоимость",
+      "progress": "Прогресс"
+    },
+    "validation": {
+      "title": "Требуется указать название",
+      "description": "Требуется указать описание",
+      "longDescription": "Требуется указать полное описание",
+      "school": "Требуется указать школу",
+      "language": "Требуется указать язык",
+      "category": "Требуется указать категорию",
+      "price": "Требуется указать стоимость",
+      "subtitles": "Требуется добавить хотя бы один субтитр",
+      "tags": "Требуется добавить хотя бы один тег",
+      "featuredImage": "Требуется добавить главное изображение",
+      "thumbnail": "Требуется добавить миниатюру",
+      "syllabus": "Требуется добавить хотя бы один раздел с темами",
+      "learningObjectives": "Требуется добавить хотя бы одну цель обучения",
+      "requirements": "Требуется добавить хотя бы одно требование",
+      "priceRequired": "Цена курса обязательна",
+      "priceMin": "Цена должна быть больше 0"
+    },
+    "messages": {
+      "updateSuccess": "Курс успешно обновлен",
+      "updateError": "Не удалось обновить курс",
+      "uploadingMedia": "Загрузка медиафайлов...",
+      "uploadingVideo": "Загрузка видео для раздела {{section}}, темы {{topic}}...",
+      "retry": "Повторить"
+    },
+    "basicInfo": {
+      "title": "Название курса",
+      "titlePlaceholder": "Введите название курса",
+      "shortDescription": "Краткое описание",
+      "descriptionPlaceholder": "Введите краткое описание",
+      "detailedDescription": "Подробное описание",
+      "longDescriptionPlaceholder": "Введите подробное описание курса",
+      "school": "Школа",
+      "selectSchool": "Выберите школу",
+      "category": "Категория",
+      "selectCategory": "Выберите категорию",
+      "language": "Язык",
+      "selectLanguage": "Выберите язык курса",
+      "validation": {
+        "titleRequired": "Название курса обязательно",
+        "descriptionRequired": "Описание курса обязательно",
+        "longDescriptionRequired": "Подробное описание обязательно",
+        "schoolRequired": "Школа обязательна",
+        "categoryRequired": "Категория обязательна",
+        "languageRequired": "Язык обязателен"
+      }
+    },
+    "content": {
+      "learningObjectives": {
+        "title": "Цели обучения",
+        "description": "Добавьте не менее 3 целей, которых достигнут учащиеся после прохождения курса",
+        "placeholder": "Введите цель обучения",
+        "addButton": "Добавить цель обучения"
+      },
+      "requirements": {
+        "title": "Требования к курсу",
+        "addButton": "Добавить требование",
+        "placeholder": "Введите требование к курсу",
+        "minLength": "Требование должно содержать не менее 10 символов"
+      },
+      "syllabus": {
+        "title": "Программа курса",
+        "addSection": "Добавить раздел",
+        "sectionTitle": "Название раздела",
+        "addTopic": "Добавить тему",
+        "topicTitle": "Название темы",
+        "uploadVideo": "Загрузить видео",
+        "validation": {
+          "noSections": "Не найдены разделы программы",
+          "noTopics": "Раздел {{section}} не содержит тем",
+          "noTitle": "Раздел {{section}} не имеет названия",
+          "noTopicTitle": "Тема {{topic}} в разделе {{section}} не имеет названия",
+          "noDuration": "Тема {{topic}} в разделе {{section}} не имеет длительности",
+          "noVideo": "Тема {{topic}} в разделе {{section}} не имеет видео",
+          "waitUploads": "Пожалуйста, дождитесь завершения загрузки всех видео",
+          "noRequirements": "Не найдены требования",
+          "emptyRequirement": "Найдено пустое требование"
+        }
+      },
+      "upload": {
+        "success": "Видео успешно загружено",
+        "error": "Не удалось обновить расположение видео",
+        "invalidFile": "Пожалуйста, выберите корректный видеофайл",
+        "noFile": "Файл не выбран"
+      }
+    },
+    "media": {
+      "featuredImage": {
+        "title": "Главное изображение",
+        "description": "Это изображение будет отображаться на странице курса",
+        "upload": {
+          "title": "Загрузить главное изображение",
+          "description": "PNG, JPG до 10МБ"
+        }
+      },
+      "thumbnail": {
+        "title": "Миниатюра курса",
+        "description": "Это изображение будет показано в списке курсов и результатах поиска",
+        "upload": {
+          "title": "Загрузить миниатюру",
+          "description": "PNG, JPG до 10МБ"
+        }
+      },
+      "requirements": {
+        "title": "Требования к изображениям",
+        "featuredSize": "Главное изображение: Рекомендуемый размер 1200x600 пикселей",
+        "thumbnailSize": "Миниатюра: Рекомендуемый размер 640x360 пикселей",
+        "maxSize": "Максимальный размер файла: 10МБ",
+        "formats": "Поддерживаемые форматы: PNG, JPG"
+      },
+      "validation": {
+        "invalidType": "Неверный тип файла. Разрешены только изображения PNG и JPG."
+      }
+    },
+    "pricing": {
+      "title": "Стоимость курса",
+      "price": {
+        "label": "Цена курса",
+        "placeholder": "Введите цену курса",
+        "hint": "Помните о конкурентоспособной цене, отражающей ценность курса"
+      },
+      "tags": {
+        "title": "Теги курса",
+        "label": "Теги",
+        "placeholder": "Добавить тег",
+        "guidelines": {
+          "title": "Рекомендации по тегам",
+          "items": [
+            "Добавьте релевантные теги, чтобы студенты могли найти ваш курс",
+            "Используйте строчные буквы и избегайте специальных символов",
+            "Теги должны быть короткими и описательными",
+            "Разделяйте слова дефисами (например, \"веб-разработка\")"
+          ]
+        }
+      },
+      "subtitles": {
+        "title": "Доступные субтитры",
+        "label": "Субтитры",
+        "placeholder": "Выберите язык",
+        "guidelines": {
+          "title": "Рекомендации по субтитрам",
+          "items": [
+            "Добавьте хотя бы один язык субтитров",
+            "Убедитесь, что субтитры точно синхронизированы",
+            "Рекомендуется профессиональный перевод",
+            "Поддержка языков с письмом справа налево (арабский, иврит)"
+          ]
+        }
+      },
+      "features": {
+        "title": "Особенности курса"
+      },
+      "validation": {
+        "priceRequired": "Цена курса обязательна",
+        "priceMin": "Цена должна быть больше 0"
+      }
+    }
+  },
+  "enrolledCourses": {
+    "title": "Мои курсы",
+    "subtitle": "Здесь представлены курсы, на которые вы записаны",
+    "noCourses": {
+      "title": "Курсы не найдены",
+      "description": "Вы еще не записаны ни на один курс."
+    },
+    "error": {
+      "loadingFailed": "Не удалось загрузить ваши курсы. Пожалуйста, попробуйте позже."
+    },
+    "selfPaced": "Собственный темп",
+    "allLevels": "Все уровни",
+    "enrolled": "{{count}} учащихся"
+  },
+  "learningPath": {
+    "title": "Твой путь обучения Java",
+    "subtitle": "Двигайся от основ к профессиональному уровню!",
+    "progress": "Прогресс: {{progress}}%",
+    "steps": {
+      "basics": {
+        "title": "Основы Java",
+        "description": "Изучение синтаксиса и основ языка."
+      },
+      "oop": {
+        "title": "ООП в Java",
+        "description": "Понимание принципов объектно-ориентированного программирования."
+      },
+      "spring": {
+        "title": "Spring Boot Framework",
+        "description": "Разработка веб-приложений на Spring Boot."
+      },
+      "microservices": {
+        "title": "Микросервисы",
+        "description": "Создание распределённых систем на базе микросервисной архитектуры."
+      },
+      "finalProject": {
+        "title": "Проект: Финальный продукт",
+        "description": "Реализация собственного проекта с использованием изученных технологий."
+      }
+    },
+    "finalStep": {
+      "title": "Java-разработчик",
+      "description": "Ты на вершине пути! 🎉"
+    }
+  },
+  "schedule": {
+    "title": "Расписание занятий",
+    "subtitle": "Узнай продолжительность занятий и оцени время для освоения!",
+    "duration": "{{hours}} часа",
+    "difficulty": {
+      "label": "Сложность",
+      "easy": "Легко",
+      "medium": "Средне",
+      "hard": "Сложно"
+    },
+    "mastery": "Освоение",
+    "days": "{{count}} день",
+    "days_1": "{{count}} день",
+    "days_2": "{{count}} дня",
+    "days_5": "{{count}} дней",
+    "status": {
+      "inProgress": "В процессе",
+      "upcoming": "Предстоящее"
+    }
+  },
+  "sidebar": {
+    "student": {
+      "title": "Учебный портал",
+      "myCourses": "Мои курсы",
+      "learningPath": "Путь обучения",
+      "schedule": "Расписание",
+      "assignments": "Задания",
+      "forums": "Форумы обсуждений",
+      "certificates": "Сертификаты",
+      "progress": "Отслеживание прогресса",
+      "history": "История обучения",
+      "settings": "Настройки"
+    },
+    "schoolAdmin": {
+      "title": "Управление школой",
+      "dashboard": "Панель управления",
+      "schools": "Школы",
+      "courses": "Курсы",
+      "categories": "Категории",
+      "quizzes": "Тесты",
+      "students": "Студенты",
+      "studentRequests": "Заявки студентов",
+      "addSchool": "Добавить школу",
+      "createCourse": "Создать курс",
+      "calendar": "Календарь курсов",
+      "discussions": "Обсуждения",
+      "settings": "Настройки",
+      "descriptions": {
+        "dashboard": "Главная панель управления школой",
+        "schools": "Управление и настройка школ",
+        "courses": "Создание и редактирование курсов",
+        "categories": "Управление категориями курсов",
+        "quizzes": "Создание и управление тестами",
+        "students": "Просмотр и управление студентами",
+        "studentRequests": "Обработка заявок на поступление",
+        "addSchool": "Регистрация новой школы",
+        "createCourse": "Создание нового учебного курса",
+        "calendar": "Планирование и расписание курсов",
+        "discussions": "Форумы и обсуждения курсов",
+        "settings": "Настройки системы и профиля"
+      }
+    },
+    "superAdmin": {
+      "title": "Консоль администратора",
+      "dashboard": "Панель управления",
+      "schoolsManagement": "Управление школами",
+      "userManagement": "Управление пользователями",
+      "courseManagement": "Управление курсами",
+      "categories": "Категории",
+      "contentManagement": "Управление контентом",
+      "analytics": "Аналитика",
+      "systemSettings": "Системные настройки",
+      "security": "Безопасность",
+      "notifications": "Уведомления",
+      "support": "Поддержка"
+    },
+    "blogAdmin": {
+      "title": "Управление блогом",
+      "overview": "Обзор",
+      "posts": "Публикации",
+      "categories": "Категории",
+      "comments": "Комментарии",
+      "tags": "Теги",
+      "likes": "Лайки",
+      "views": "Просмотры",
+      "analytics": "Аналитика",
+      "settings": "Настройки"
+    }
+  },
+  "adminQuizzes": {
+    "title": "Управление тестами",
+    "createQuiz": "Создать тест",
+    "sheet": {
+      "description": "Описание теста"
+    },
+    "error": "Ошибка при загрузке тестов",
+    "preview": "Предпросмотр",
+    "noTopics": "Нет доступных тем"
+  },
+  "errorBoundary": {
+    "title": "Что-то пошло не так",
+    "message": "Пожалуйста, попробуйте позже."
+  },
+  "help": "Помощь",
+  "rules": "Условия обслуживания",
+  "help_text": "Если у вас возникнут вопросы, наша служба поддержки всегда готова вам помочь:",
+  "answer_placeholder": "Здесь будет ответ на вопрос \"{question}\"",
+  "write_to_us": "Написать нам",
+  "write_to_us_text": "Не нашли ответ на свой вопрос? Напишите нам",
+  "write_to_us_button": "Написать нам",
+  "needHelp": "Нужна помощь?",
+  "shareOpinion": "Поделитесь мнением, задайте вопрос или сообщите об ошибке",
+  "name": "Имя",
+  "phone": "Телефон",
+  "email": "Электронная почта",
+  "message": "Сообщение",
+  "send": "Отправить",
+  "courses": "Курсы",
+  "search_school": "Поиск школы",
+  "videoPlayer": {
+    "selectTopic": "Выберите тему для просмотра",
+    "error": "Ошибка загрузки видео",
+    "invalidUrl": "Неверный URL видео",
+    "accessError": "Ошибка доступа к видео",
+    "savingProgress": "Сохранение прогресса..."
+  },
+  "courseStudents": {
+    "title": "Студенты курса",
+    "description": "Просмотр и управление студентами, записанными на {{courseTitle}}",
+    "table": {
+      "name": "Имя",
+      "email": "Email",
+      "status": "Статус",
+      "progress": "Прогресс",
+      "enrolledAt": "Дата записи",
+      "lastAccessed": "Последний вход"
+    },
+    "progress": {
+      "overall": "Общий",
+      "videos": "Видео",
+      "quizzes": "Тесты",
+      "video": "Видео",
+      "lastWatched": "Последний просмотр:",
+      "quizScore": "Результат теста:",
+      "lastAttempt": "Последняя попытка:"
+    },
+    "dialog": {
+      "title": "Детали прогресса студента",
+      "description": "Подробная информация о прогрессе для {{email}}",
+      "overallProgress": "Общий прогресс",
+      "componentsCompleted": "Завершено {{completed}} из {{total}} компонентов",
+      "videosProgress": "Прогресс видео",
+      "quizzesProgress": "Прогресс тестов",
+      "videos": "Видео",
+      "quizzes": "Тесты",
+      "close": "Закрыть"
+    }
+  },
+  "schoolStudentCourses": {
+    "title": "Курсы школы",
+    "studentsManagement": "Управление студентами",
+    "loading": "Загрузка курсов...",
+    "error": "Ошибка загрузки курсов: {{message}}",
+    "noSchoolSelected": "Пожалуйста, выберите школу из боковой панели для просмотра курсов и студентов.",
+    "noCourses": "Курсы для этой школы не найдены.",
+    "schoolId": "ID школы: {{schoolId}}"
+  },
+  "quizSidebar": {
+    "myCourses": "Мои курсы",
+    "myCoursesDesc": "Курсы, на которые вы подписаны",
+    "allQuizzes": "Все тесты",
+    "allQuizzesDesc": "Просмотреть все доступные тесты",
+    "title": "Тесты и обучение",
+    "subtitle": "Повышайте свои знания",
+    "footer": "Продолжайте учиться"
+  },
+  "blog": {
+    "validation": {
+      "title": {
+        "min": "Заголовок слишком короткий (минимум {{min}} символов)",
+        "max": "Заголовок слишком длинный (максимум {{max}} символов)",
+        "required": "Заголовок обязателен"
+      },
+      "content": {
+        "min": "Содержание слишком короткое (минимум {{min}} символов)",
+        "required": "Содержание обязательно"
+      },
+      "type": {
+        "required": "Тип публикации обязателен"
+      },
+      "status": {
+        "required": "Статус обязателен"
+      },
+      "category": {
+        "required": "Категория обязательна"
+      },
+      "image": {
+        "required": "Изображение обязательно"
+      }
+    },
+    "dialog": {
+      "create": {
+        "title": "Создать новую публикацию",
+        "description": "Заполните форму ниже для создания новой записи в блоге"
+      }
+    },
+    "form": {
+      "title": {
+        "label": "Заголовок",
+        "placeholder": "Введите заголовок публикации"
+      },
+      "tags": {
+        "label": "Теги",
+        "placeholder": "Введите теги через запятую"
+      },
+      "category": {
+        "label": "Категория",
+        "placeholder": "Выберите категорию"
+      },
+      "status": {
+        "label": "Статус",
+        "placeholder": "Выберите статус публикации"
+      },
+      "image": {
+        "label": "Изображение"
+      },
+      "content": {
+        "label": "Содержание",
+        "placeholder": "Напишите содержание вашей публикации..."
+      },
+      "create": "Создать"
+    },
+    "post": {
+      "status": {
+        "draft": "Черновик",
+        "published": "Опубликовано"
+      }
+    }
+  },
+  "admin": {
+    "blog": {
+      "sidebar": {
+        "overview": "Обзор",
+        "posts": "Записи",
+        "categories": "Категории",
+        "comments": "Комментарии",
+        "tags": "Теги",
+        "likes": "Лайки",
+        "views": "Просмотры",
+        "settings": "Настройки"
+      }
+    }
+  }
+}

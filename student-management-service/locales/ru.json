@@ -1,0 +1,29 @@
+{
+  "welcome": "Добро пожаловать в Систему управления студентами",
+  "error": {
+    "notFound": "{{resource}} не найден",
+    "internalServer": "Произошла внутренняя ошибка сервера",
+    "badRequest": "Некорректный запрос: {{message}}"
+  },
+  "user": "Пользователь",
+  "course": "Курс",
+  "unknown": "Неизвестно",
+  "enrollment": {
+    "courseNotAvailable": "Курс недоступен для зачисления",
+    "onlyStudents": "Только студенты могут записаться на курсы",
+    "prerequisiteNotCompleted": "Предварительный курс '{{course}}' не завершен",
+    "invalidPayment": "Неверная сумма или валюта платежа",
+    "createSuccess": "Зачисление успешно создано",
+    "courseDuration": "{{weeks}} недель",
+    "unknownCourse": "Неизвестный курс",
+    "enrollment": "Зачисление",
+    "invalidStatus": "Недействительный статус зачисления",
+    "updateSuccess": "Статус зачисления успешно обновлен"
+  },
+  "certificate": {
+    "courseNotCompleted": "Курс не завершен",
+    "generateSuccess": "Сертификат успешно создан",
+    "unknownCourse": "Неизвестный курс",
+    "notFound": "Сертификат не найден"
+  }
+}

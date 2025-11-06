@@ -1,0 +1,1719 @@
+{
+  "common": {
+    "home": "Басты бет",
+    "news": "Жаңалықтар",
+    "forum": "Форум",
+    "catalog": "Каталог",
+    "profile": "Профиль",
+    "login": "Кіру",
+    "register": "Тіркелу",
+    "logout": "Шығу",
+    "close": "Жабу",
+    "lightMode": "Жарық режим",
+    "darkMode": "Қараңғы режим",
+    "education": "Білім беру",
+    "dashboard": "Панель управления",
+    "required": "Міндетті",
+    "submitting": "Жіберілуде...",
+    "loading": "Жүктелуде...",
+    "blogManagement": "Блог басқару"
+  },
+  "faq": {
+    "main": "Жиі қойылатын сұрақтар",
+    "items": [
+      {
+        "question": "Платформада оқу қалай өтеді?",
+        "answer": "Оқу онлайн форматта өтеді. Студенттерге бейнематериалдар, тапсырмалар мен тесттерге қолжетімділік беріледі. Әр курсқа арналған ментор барлық кезеңде көмектеседі."
+      },
+      {
+        "question": "Сынақ сабақтар бар ма?",
+        "answer": "Иә, біз курс сапасы мен құрылымын сатып алмас бұрын бағалауыңыз үшін бірнеше тегін сынақ сабағын ұсынамыз."
+      },
+      {
+        "question": "Сертификатты қалай алуға болады?",
+        "answer": "Курсты сәтті аяқтап, барлық тапсырмаларды орындағаннан кейін сізге дағдыларыңызды растайтын сертификат беріледі."
+      },
+      {
+        "question": "Егер курс ұнамаса, ақшаны қайтара аламын ба?",
+        "answer": "Иә, сатып алған күннен бастап 14 күн ішінде курс сізге сәйкес келмесе, ақшаны қайтара аласыз."
+      }
+    ]
+  },
+  "media": {
+    "upload": {
+      "preview": "Алдын-ала қарау",
+      "replaceImage": "Суретті ауыстыру үшін басыңыз немесе сүйреңіз",
+      "dropHere": "Суретті осында тастаңыз",
+      "dragOrClick": "Суретті осында сүйреп әкеліңіз немесе таңдау үшін басыңыз",
+      "supportedFormats": "Қолдау көрсетілетін форматтар: JPEG, PNG. Максималды өлшемі: 5МБ",
+      "maxSizeExceeded": "Файл өлшемі {{size}} кіші болуы керек"
+    }
+  },
+  "imageUpload": {
+    "single": {
+      "dropHere": "Суретті осы жерге тастаңыз...",
+      "dragOrClick": "Суретті осында сүйреп әкеліңіз немесе таңдау үшін басыңыз",
+      "altText": "Альт мәтіні"
+    },
+    "multiple": {
+      "dropHere": "Файлдарды осы жерге тастаңыз...",
+      "dragOrClick": "Файлдарды осында сүйреп әкеліңіз немесе таңдау үшін басыңыз",
+      "altText": "Альт мәтіні"
+    }
+  },
+  "tests": {
+    "card": {
+      "title": "Оқыту курсы",
+      "lessons": "Мектеп - {{count}} сабақ",
+      "takeTest": "Тестті тапсыру",
+      "time": "Уақыт: {{minutes}} мин"
+    }
+  },
+  "modal": {
+    "createTopic": "Тақырып құру",
+    "topicName": "Тақырып атауы",
+    "description": "Сипаттама",
+    "cancel": "Бас тарту",
+    "submit": "Жіберу"
+  },
+  "schools": {
+    "table": {
+      "ariaLabel": "Мектептер кестесі",
+      "columns": {
+        "school": "МЕКТЕП",
+        "founded": "ҚҰРЫЛҒАН",
+        "contact": "БАЙЛАНЫС",
+        "location": "ОРНАЛАСҚАН ЖЕРІ",
+        "status": "КҮЙІ",
+        "actions": "ӘРЕКЕТТЕР"
+      }
+    },
+    "status": {
+      "approved": "Мақұлданған",
+      "pending": "Күтілуде",
+      "rejected": "Қабылданбаған"
+    },
+    "actions": {
+      "view": "Қарау",
+      "edit": "Өңдеу"
+    },
+    "modal": {
+      "description": "Сипаттама",
+      "details": "Толық мәлімет",
+      "founded": "Құрылған",
+      "website": "Веб-сайт",
+      "email": "Электрондық пошта",
+      "phone": "Телефон",
+      "location": "Орналасқан жері",
+      "address": "Мекенжай",
+      "city": "Қала",
+      "country": "Ел",
+      "status": "Күйі"
+    }
+  },
+  "orders": {
+    "card": {
+      "title": "Оқыту курсы",
+      "school": "Мектеп - жазылған",
+      "pay": "Төлеу",
+      "duration": "{{minutes}} мин"
+    }
+  },
+  "footer": {
+    "starAlt": "Жұлдыз декорациясы",
+    "navigation": {
+      "title": "Навигация",
+      "aboutUs": "Біз туралы",
+      "contacts": "Байланыс",
+      "aboutSite": "Сайт туралы",
+      "mission": "Біздің миссиямыз",
+      "payment": "Төлем нұсқалары"
+    },
+    "contacts": {
+      "title": "Байланыс",
+      "address": "Қазақстан, Алматы қ.",
+      "phone": "+7 771 949 95 23",
+      "email": "Onlinekz@school.org",
+      "hours": "Дү-Сб 09:30 - 19:00"
+    },
+    "social": {
+      "title": "Әлеуметтік желілерде"
+    }
+  },
+  "students": {
+    "title": "Студенттер",
+    "searchPlaceholder": "Студентті іздеу"
+  },
+  "hero": {
+    "title": "Оқуға қош келдіңіз",
+    "button": "Оқуды бастау"
+  },
+  "slider": {
+    "loading": "Мектептер жүктелуде...",
+    "error": "Мектептерді жүктеу қатесі. Кейінірек қайталап көріңіз.",
+    "noSchools": "Қазіргі уақытта қол жетімді мектептер жоқ.",
+    "noApprovedSchools": "Қазіргі уақытта мақұлданған мектептер жоқ.",
+    "topSchools": "үздік онлайн мектептер"
+  },
+  "education": {
+    "allDirections": "Барлық бағыттар",
+    "errorLoading": "Деректерді жүктеу қатесі.",
+    "coursesUpdating": "Курстар жаңартылуда",
+    "newCourses": "Жаңа курстар жақында! Олар жақында қол жетімді болады.",
+    "educationForEveryone": "Барлығына арналған білім",
+    "more": "Көбірек",
+    "priceNotSpecified": "Баға көрсетілмеген",
+    "unknownCategory": "Белгісіз санат",
+    "unknownSchool": "Белгісіз мектеп",
+    "seeMoreCourses": "Көбірек курстарды көру",
+    "noCourses": {
+      "title": "Курстар табылмады",
+      "description": "Сіз әлі ешқандай курсқа жазылған жоқсыз. Сізді қызықтыратын курстарды табу үшін каталогты қараңыз."
+    },
+    "error": {
+      "fetchingCourses": "Курс идентификаторларын алу қатесі"
+    }
+  },
+  "headerSection": {
+    "title": "YbyraiHUB — корпоративтік оқытуды іске қосу және жүргізу үшін тегін қосылу мүмкіндігі бар онлайн платформа"
+  },
+  "professionForm": {
+    "title": "Мамандық таңдауға көмектесеміз",
+    "description": "Байланыс деректерін қалдырыңыз, біз сіздің сұрақтарыңызға жауап береміз және сізге сәйкес курсты табуға көмектесеміз",
+    "namePlaceholder": "Аты",
+    "phonePlaceholder": "+77",
+    "emailPlaceholder": "Электрондық пошта",
+    "submitButton": "Жіберу",
+    "submitting": "Жіберілуде...",
+    "successMessage": "Рахмет! Біз сізбен жақын арада байланысамыз.",
+    "errorMessage": "Хабарламаны жіберу мүмкін болмады. Қайталап көріңіз.",
+    "nameError": "Аты кемінде 2 таңбадан тұруы керек",
+    "phoneError": "Дұрыс телефон нөмірін енгізіңіз",
+    "emailError": "Дұрыс email мекенжайын енгізіңіз"
+  },
+  "catalog": {
+    "loadingCourses": "Курстар жүктелуде...",
+    "errorLoadingData": "Деректерді жүктеу қатесі",
+    "tryRefreshing": "Бетті жаңартуға тырысыңыз",
+    "noCoursesFound": "Курстар табылмады",
+    "noCoursesAvailable": "Қазіргі уақытта қол жетімді курстар жоқ",
+    "courseCatalog": "Курс каталогы",
+    "discoverCourses": "Жетекші оқу орындарынан керемет курстарды ашыңыз",
+    "searchPlaceholder": "Курстарды іздеу...",
+    "filters": "Сүзгілер",
+    "clearAll": "Барлығын тазалау",
+    "showing": "{{total}} курстың {{from}}-{{to}} көрсетілген",
+    "pageInfo": "{{total}} беттің {{current}} беті",
+    "tryAdjusting": "Сүзгілерді немесе іздеу шарттарын өзгертіп көріңіз",
+    "resetFilters": "Сүзгілерді қалпына келтіру",
+    "previous": "Алдыңғы",
+    "next": "Келесі",
+    "refresh": "Жаңарту"
+  },
+  "filter": {
+    "profession": "Мамандық",
+    "difficulty": "Қиындық",
+    "price": "Баға",
+    "minPrice": "Мин, Т",
+    "maxPrice": "Макс, Т",
+    "duration": "Ұзақтығы",
+    "minDuration": "Мин, айлар",
+    "maxDuration": "Макс, айлар",
+    "resetFilters": "Фильтрлерді қалпына келтіру",
+    "apply": "Қолдану",
+    "categories": "Санаттар",
+    "schools": "Мектептер",
+    "levels": {
+      "beginner": "Бастапқы",
+      "intermediate": "Орташа",
+      "advanced": "Жоғары"
+    }
+  },
+  "courseDetailsModal": {
+    "duration": "Ұзақтығы",
+    "months": "ай",
+    "coursePrice": "Курс бағасы",
+    "enrollButton": "Жазылу",
+    "close": "Жабу"
+  },
+  "courseCard": {
+    "weeks": "апта",
+    "enroll": "Жазылу",
+    "lessons": "сабақ",
+    "modules": "модульдер",
+    "more": "көбірек",
+    "free": "Тегін",
+    "instructors": "мұғалімдер",
+    "continueLearning": "Оқуды жалғастыру",
+    "enrolled": "Жазылған",
+    "level": {
+      "notSpecified": "Деңгей көрсетілмеген"
+    },
+    "language": {
+      "notSpecified": "Тіл көрсетілмеген"
+    },
+    "enrollmentDialog": {
+      "title": "Курсқа жазылу",
+      "duration": "Ұзақтығы",
+      "price": "Бағасы",
+      "description": "Курс сипаттамасы",
+      "notSpecified": "Көрсетілмеген",
+      "cancel": "Бас тарту",
+      "confirmEnroll": "Жазылуды растау",
+      "enrolling": "Жазылуда...",
+      "error": {
+        "title": "Қате",
+        "courseNotFound": "Курс деректері табылмады",
+        "loadingError": "Курс деректерін жүктеу қатесі",
+        "alreadyEnrolled": "Сіз бұл курсқа әлдеқашан жазылғансыз",
+        "enrollmentError": "Курсқа жазылу кезінде қате"
+      },
+      "success": "Сіз курсқа сәтті жазылдыңыз!"
+    }
+  },
+  "news": {
+    "title": "Жаңалықтар",
+    "description": "IT саласындағы оқыту туралы өзекті ақпарат. IT трендтері, бағдарламалау тілдерінің рейтингтері, IT мамандықтарын таңдау бойынша кеңестер мен ұсыныстар және тағы басқалар туралы айтамыз.",
+    "allCategories": "Барлық санаттар",
+    "noPostsFound": "Жаңалықтар табылмады",
+    "tryDifferentCategory": "Басқа санатты таңдап көріңіз",
+    "newsAndEvents": "Жаңалықтар мен оқиғалар",
+    "selectCategory": "Санатты таңдаңыз",
+    "header": {
+      "lightsAlt": "Жарық декорациясы",
+      "starAlt": "Жұлдыз декорациясы",
+      "decorativeIcon": "Декоративті белгіше {{number}}"
+    },
+    "error": {
+      "loadingArticle": "Мақаланы жүктеу қатесі",
+      "postNotFound": "Мақала табылмады",
+      "goBack": "Артқа қайту",
+      "userNotAuthenticated": "Пайдаланушы аутентификацияланбаған"
+    },
+    "shareButtons": {
+      "share": "Бөлісу"
+    },
+    "comments": {
+      "title": "Пікірлер",
+      "noComments": "Әзірге пікірлер жоқ",
+      "addComment": "Пікір қосу",
+      "loading": "Пікірлер жүктелуде..."
+    },
+    "post": {
+      "tags": "Тегтер",
+      "readMore": "Толығырақ",
+      "publishedOn": "Жарияланған"
+    },
+    "metrics": {
+      "views": "Қаралым",
+      "likes": "Лайктар",
+      "comments": "Пікірлер"
+    }
+  },
+  "forum": {
+    "title": "Форум",
+    "description": "IT саласындағы өзекті тақырыптарды талқылаңыз, тәжірибеңізбен бөлісіңіз және қауымдастықтан сұрақтарыңызға жауап алыңыз.",
+    "discussions": "Форум талқылаулары",
+    "loading": "Талқылаулар жүктелуде...",
+    "noDiscussions": "Талқылаулар табылмады",
+    "search": {
+      "placeholder": "Талқылауларды іздеу...",
+      "noResults": "Нәтижелер табылмады"
+    },
+    "categories": {
+      "all": "Барлық санаттар",
+      "title": "Санаттар",
+      "selectCategory": "Санатты таңдау"
+    },
+    "post": {
+      "notFound": "Пост табылмады",
+      "anonymous": "Белгісіз",
+      "share": "Бөлісу",
+      "discussions": "Талқылаулар",
+      "loginToLike": "Лайк қою үшін жүйеге кіріңіз",
+      "replies": "жауап",
+      "page": "Бет",
+      "of": "/"
+    },
+    "actions": {
+      "like": "Ұнайды",
+      "comment": "Пікір қалдыру",
+      "share": "Бөлісу",
+      "report": "Шағымдану",
+      "delete": "Жою"
+    },
+    "comments": {
+      "title": "Пікірлер",
+      "noComments": "Әзірге пікірлер жоқ",
+      "addComment": "Пікір қосу",
+      "loading": "Пікірлер жүктелуде..."
+    },
+    "errors": {
+      "loadingFailed": "Талқылауларды жүктеу сәтсіз аяқталды",
+      "likeFailed": "Лайкты жаңарту сәтсіз аяқталды"
+    },
+    "sidebar": {
+      "overview": {
+        "title": "Форум шолуы",
+        "totalDiscussions": "Барлық талқылаулар",
+        "totalLikes": "Барлық лайктар",
+        "totalViews": "Барлық қаралымдар"
+      },
+      "categories": {
+        "title": "Танымал санаттар",
+        "posts": "пост"
+      },
+      "trending": {
+        "title": "Танымал талқылаулар"
+      },
+      "activity": {
+        "title": "Соңғы белсенділік",
+        "liked": "ұнатты",
+        "commentedOn": "пікір қалдырды",
+        "anonymous": "Белгісіз"
+      }
+    },
+    "leftSidebar": {
+      "search": "Талқылауларды іздеу...",
+      "createDiscussion": "Талқылау құру",
+      "navigation": {
+        "allDiscussions": "Барлық талқылаулар",
+        "discussions": "Пікірталас",
+        "events": "Оқиғалар",
+        "announcements": "Хабарландырулар"
+      },
+      "categories": "Санаттар"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Кіру",
+      "email": "Email",
+      "password": "Құпия сөз",
+      "forgotPassword": "Құпия сөзді ұмыттыңыз ба?",
+      "signIn": "Кіру",
+      "noAccount": "Тіркелгіңіз жоқ па?",
+      "signUp": "Тіркелу",
+      "withGoogle": "Google арқылы",
+      "or": "немесе",
+      "loginToEnroll": "Курсқа жазылу үшін кіріңіз",
+      "error": "Кіру қатесі",
+      "socialLoginError": "{{provider}} арқылы кіру қатесі"
+    },
+    "register": {
+      "title": "Тіркелу",
+      "email": "Email",
+      "password": "Құпия сөз",
+      "confirmPassword": "Құпия сөзді растаңыз",
+      "firstName": "Аты",
+      "lastName": "Тегі",
+      "middleName": "Әкесінің аты",
+      "signUp": "Тіркелу",
+      "withGoogle": "Google арқылы",
+      "haveAccount": "Тіркелгіңіз бар ма?",
+      "signIn": "Кіру",
+      "registering": "Тіркелу...",
+      "success": "Тіркелу сәтті аяқталды",
+      "errors": {
+        "passwordMatch": "Құпия сөздер сәйкес келмейді",
+        "passwordLength": "Құпия сөз кемінде 8 таңбадан тұруы керек",
+        "passwordRequirements": "Құпия сөзде кемінде бір бас әріп, бір кіші әріп, бір сан және бір арнайы таңба болуы керек",
+        "emailExists": "Бұл email тіркелген",
+        "invalidPassword": "Құпия сөз кемінде 8 таңбадан тұруы керек және бас әріптер, кіші әріптер, сандар мен арнайы таңбаларды қамтуы керек",
+        "generic": "Тіркелу қатесі"
+      }
+    },
+    "forgotPassword": {
+      "title": "Құпия сөзді қалпына келтіру",
+      "returnToLogin": "Кіруге оралу",
+      "or": "Немесе",
+      "email": "Email мекенжайы",
+      "verificationCode": "Растау коды",
+      "newPassword": "Жаңа құпия сөз",
+      "confirmPassword": "Жаңа құпия сөзді растаңыз",
+      "sendCode": "Кодты жіберу",
+      "resetPassword": "Құпия сөзді қалпына келтіру",
+      "codeSent": "Растау коды сіздің email мекенжайыңызға жіберілді.",
+      "resetSuccess": "Құпия сөз сәтті қалпына келтірілді. Жаңа құпия сөзбен кіріңіз.",
+      "errors": {
+        "sendCode": "Растау кодын жіберу сәтсіз аяқталды",
+        "resetPassword": "Құпия сөзді қалпына келтіру сәтсіз аяқталды",
+        "passwordMatch": "Құпия сөздер сәйкес келмейді",
+        "passwordLength": "Құпия сөз кемінде 8 таңбадан тұруы керек",
+        "passwordRequirements": "Құпия сөзде кемінде бір бас әріп, бір кіші әріп, бір сан және бір арнайы таңба болуы керек"
+      }
+    },
+    "verifyEmail": {
+      "title": "Email-ді растаңыз",
+      "sentTo": "Растау кодын мына адреске жібердік",
+      "enterCode": "Растау кодын енгізіңіз",
+      "verify": "Email-ді растау",
+      "verifying": "Тексерілуде...",
+      "resendCode": "Кодты қайта жіберу",
+      "codeSent": "Жаңа растау коды сіздің email-ге жіберілді",
+      "errors": {
+        "verificationFailed": "Растау сәтсіз аяқталды",
+        "invalidCode": "Жарамсыз растау коды",
+        "expiredCode": "Растау кодының мерзімі аяқталды",
+        "resendFailed": "Кодты қайта жіберу сәтсіз аяқталды"
+      }
+    }
+  },
+  "course": {
+    "notFound": "Курс табылмады",
+    "notFoundDescription": "Сұралған курс табылмады",
+    "loading": "Курс жүктелуде...",
+    "progress": {
+      "loading": "Прогресс жүктелуде...",
+      "title": "Курстың жалпы прогресі",
+      "overall": "Жалпы орындау",
+      "completed": "{{total}} тапсырманың {{completed}} аяқталды",
+      "videos": "Бейне сабақтар",
+      "quizzes": "Тесттер",
+      "score": "Ұпайлар",
+      "progressPercent": "Прогресс: {{percent}}%",
+      "lastUpdated": "Соңғы жаңарту: {{date}}",
+      "noDate": "Күні қолжетімді емес",
+      "noVideos": "Бейне прогресі әзірге қолжетімді емес",
+      "noQuizzes": "Тест прогресі әзірше қолжетімді емес",
+      "error": {
+        "title": "Прогрессті жүктеу қатесі",
+        "message": "Прогресс деректерін жүктеу мүмкін болмады. Кейінірек қайталап көріңіз."
+      },
+      "noData": {
+        "title": "Прогресс деректері жоқ",
+        "message": "Бұл курс үшін прогресс деректері әзірше қолжетімді емес. Прогресіңізді көру үшін оқуды бастаңыз!"
+      },
+      "status": {
+        "completed": "Аяқталды",
+        "inProgress": "Үдерісте"
+      }
+    },
+    "overview": {
+      "title": "Курс шолуы",
+      "description": "Курс туралы толық ақпарат және оқу бағдарламасы",
+      "currentLesson": "Ағымдағы сабақ",
+      "selectLesson": "Бастау үшін сабақ таңдаңыз",
+      "lessonDescription": "Сабақ сипаттамасы"
+    },
+    "chatAssistant": "Чат-көмекші",
+    "backToCourses": "Курстарға оралу",
+    "selectVideoPrompt": "Оқуды бастау үшін бейнені таңдаңыз",
+    "learningObjectives": "Оқу мақсаттары",
+    "courseContent": "Курс мазмұны",
+    "courseInfo": {
+      "title": "Курс туралы ақпарат",
+      "description": "Курс сипаттамасы",
+      "objectives": "Оқу мақсаттары"
+    },
+    "videoPlayer": {
+      "duration": "Ұзақтығы",
+      "noContent": "Бейне таңдалмаған",
+      "completion": "Аяқтау"
+    },
+    "syllabus": {
+      "section": "Бөлім",
+      "topic": "Тақырып",
+      "loadError": "Курс бағдарламасын жүктеу мүмкін емес",
+      "preview": "Алдын ала қарау",
+      "lectures": "{{count}} лекция",
+      "lectures_plural": "{{count}} лекция",
+      "questions": "{{count}} сұрақ",
+      "questions_plural": "{{count}} сұрақ"
+    },
+    "banner": {
+      "bestseller": "Үздік",
+      "lastUpdated": "Соңғы жаңарту",
+      "students": "студент",
+      "enrollNow": "Қазір жазылу"
+    },
+    "requirements": {
+      "title": "Талаптар"
+    },
+    "description": {
+      "title": "Сипаттама"
+    },
+    "reviews": {
+      "title": "Студенттердің пікірлері",
+      "courses": "курстар",
+      "reviews": "пікірлер",
+      "noReviews": "Әзірге пікірлер жоқ"
+    },
+    "instructor": {
+      "title": "Курс мұғалімі",
+      "rating": "Мұғалім рейтингі",
+      "students": "Студенттер",
+      "courses": "Курстар",
+      "reviews": "Пікірлер",
+      "noInfo": "Мұғалім туралы ақпарат жоқ"
+    },
+    "stickyCard": {
+      "totalLength": "жалпы ұзақтығы",
+      "sections": "бөлімдер",
+      "lectures": "лекциялар",
+      "enrollNow": "Қазір жазылу",
+      "moneyBack": "30 күндік ақша қайтару кепілдігі",
+      "certificate": "Аяқтау сертификаты",
+      "includes": "Бұл курс мыналарды қамтиды:"
+    },
+    "duration": {
+      "notSpecified": "Ұзақтығы көрсетілмеген"
+    },
+    "instructors": "{{count}} мұғалім",
+    "instructors_plural": "{{count}} мұғалім",
+    "sidebar": {
+      "overview": "Шолу",
+      "syllabus": "Оқу жоспары",
+      "quizzes": "Тесттер",
+      "progress": "Прогресс",
+      "courseContent": "Курс мазмұны",
+      "watchVideo": "Видеоны қараңыз ({{progress}}%)",
+      "completed": "Аяқталды",
+      "courseDuration": "Курс ұзақтығы",
+      "selfPaced": "Өз қарқынмен",
+      "sectionsCount": "Бөлімдер саны",
+      "topicsCount": "Тақырыптар саны",
+      "videoPlayer": "Видеоплеер",
+      "videoPlayerDescription": "Таңдалған курс тақырыбына арналған видеоплеер",
+      "courseMenu": "Курс мәзірі",
+      "learningMaterials": "Оқу материалдары",
+      "overviewDescription": "Курс туралы толық ақпарат",
+      "syllabusDescription": "Курс бағдарламасы мен құрылымы",
+      "quizzesDescription": "Практикалық тесттер мен бағалаулар",
+      "progressDescription": "Оқу прогресіңізді бақылаңыз",
+      "courseStats": "Курс статистикасы"
+    },
+    "quizzes": {
+      "title": "Курс тесттері",
+      "noQuizzes": {
+        "title": "Тесттер табылмады",
+        "description": "Бұл курс үшін әзірге қолжетімді тесттер жоқ"
+      },
+      "difficulty": {
+        "beginner": "Бастапқы",
+        "intermediate": "Орташа",
+        "advanced": "Кәсіби"
+      },
+      "stats": {
+        "questions": "{{count}} сұрақ",
+        "questions_plural": "{{count}} сұрақ",
+        "minutes": "{{count}} минут",
+        "minutes_plural": "{{count}} минут",
+        "passingScore": "өту үшін {{score}}%"
+      },
+      "startQuiz": "Тестті бастау"
+    }
+  },
+  "blogDashboard": {
+    "title": "Блог тақтасы",
+    "download": "Жүктеу",
+    "stats": {
+      "totalPosts": "Барлық жазбалар",
+      "totalComments": "Барлық пікірлер",
+      "totalLikes": "Барлық лайктар",
+      "totalViews": "Барлық қаралымдар",
+      "thisMonth": "осы айда"
+    },
+    "charts": {
+      "engagementOverview": "Белсенділік шолуы",
+      "metrics": {
+        "posts": "Жазбалар",
+        "comments": "Пікірлер",
+        "likes": "Лайктар",
+        "views": "қаралым"
+      }
+    },
+    "topPosts": {
+      "title": "Үздік жазбалар",
+      "stats": {
+        "views": "қаралым",
+        "comments": "пікір",
+        "likes": "лайк"
+      }
+    },
+    "categories": {
+      "title": "Санаттар бойынша жазбалар",
+      "count": "Саны"
+    },
+    "activity": {
+      "title": "Соңғы белсенділік",
+      "actions": {
+        "commented": "пікір қалдырды",
+        "liked": "ұнатты"
+      }
+    },
+    "status": {
+      "title": "Күй бойынша жазбалар",
+      "draft": "Жоба",
+      "published": "Жарияланған",
+      "archived": "Мұрағатталған"
+    }
+  },
+  "blogManagement": {
+    "posts": {
+      "title": "Жазбаларды басқару",
+      "newPost": "Жаңа жазба",
+      "loading": "Жазбалар жүктелуде...",
+      "error": "Жазбаларды жүктеу қатесі: {{message}}",
+      "noPostsFound": "Жазбалар табылмады",
+      "tryAdjustingFilters": "Сүзгілерді реттеп көріңіз",
+      "filters": {
+        "type": {
+          "label": "Түрі бойынша сүзу",
+          "all": "Барлық түрлер",
+          "news": "Жаңалықтар",
+          "event": "Оқиға",
+          "discussion": "Талқылау",
+          "announcement": "Хабарландыру"
+        },
+        "status": {
+          "label": "Күйі бойынша сүзу",
+          "all": "Барлық күйлер",
+          "draft": "Жоба",
+          "published": "Жарияланған",
+          "archived": "Мұрағатталған"
+        }
+      },
+      "table": {
+        "title": "Тақырыбы",
+        "type": "Түрі",
+        "status": "Күйі",
+        "author": "Автор",
+        "category": "Санат",
+        "published": "Жарияланған",
+        "engagement": "Белсенділік",
+        "actions": "Әрекеттер"
+      },
+      "totalPosts": "Барлық жазбалар: {{count}}",
+      "deleteDialog": {
+        "title": "Жазбаны жою",
+        "description": "Бұл жазбаны жойғыңыз келетініне сенімдісіз бе?",
+        "confirm": "Жою",
+        "cancel": "Бас тарту"
+      }
+    },
+    "categories": {
+      "title": "Санаттарды басқару",
+      "addCategory": "Санат қосу",
+      "editCategory": "Санатты өңдеу",
+      "loading": "Санаттар жүктелуде...",
+      "error": "Санаттарды жүктеу қатесі",
+      "form": {
+        "name": "Атауы",
+        "description": "Сипаттама",
+        "create": "Құру",
+        "update": "Жаңарту"
+      },
+      "table": {
+        "name": "Атауы",
+        "description": "Сипаттама",
+        "posts": "Жазбалар",
+        "actions": "Әрекеттер"
+      },
+      "deleteConfirm": "Бұл санатты жойғыңыз келетініне сенімдісіз бе?"
+    },
+    "comments": {
+      "title": "Пікірлерді басқару",
+      "subtitle": "Пікірлерді модерациялау, пайдаланушылардың әрекеттерін қарау және қауымдастық ережелерін сақтау.",
+      "loading": "Пікірлер жүктелуде...",
+      "error": "Пікірлерді жүктеу қатесі",
+      "noComments": "Пікірлер табылмады",
+      "noCommentsDescription": "Көрсетілетін пікірлер жоқ.",
+      "refreshing": "Жаңартылуда...",
+      "table": {
+        "author": "Автор",
+        "content": "Мазмұны",
+        "post": "Жазба",
+        "likes": "Лайктар",
+        "date": "Күні",
+        "status": "Күйі",
+        "actions": "Әрекеттер"
+      },
+      "status": {
+        "blocked": "Бұғатталған",
+        "active": "Белсенді"
+      },
+      "actions": {
+        "view": "Қарау",
+        "block": "Бұғаттау",
+        "unblock": "Бұғаттаудан шығару",
+        "delete": "Жою"
+      },
+      "confirmDelete": "Бұл пікірді жойғыңыз келетініне сенімдісіз бе?",
+      "deleteSuccess": "Пікір сәтті жойылды",
+      "deleteError": "Пікірді жою сәтсіз аяқталды",
+      "statusUpdateSuccess": "Пікір күйі сәтті жаңартылды",
+      "statusUpdateError": "Пікір күйін жаңарту сәтсіз аяқталды"
+    }
+  },
+  "schoolManagement": {
+    "mySchools": "Менің мектептерім",
+    "loading": "Жүктелуде...",
+    "error": "Қате",
+    "noWebsite": "Веб-сайт жоқ",
+    "noLocation": "Орналасқан жері жоқ",
+    "courses": "Курстар",
+    "createSchool": "Мектеп құру",
+    "createCourse": "Курс құру",
+    "schoolDashboard": {
+      "title": "Мектептер",
+      "description": "Мектептерді және олардың параметрлерін басқару",
+      "searchPlaceholder": "Мектепті іздеу...",
+      "table": {
+        "name": "Атауы",
+        "description": "Сипаттама",
+        "status": "Күйі",
+        "actions": "Әрекеттер",
+        "logo": "Логотип"
+      },
+      "status": {
+        "active": "Белсенді",
+        "inactive": "Белсенді емес"
+      },
+      "actions": {
+        "edit": "Мектепті өңдеу",
+        "delete": "Мектепті жою"
+      },
+      "deleteDialog": {
+        "title": "Мектепті жою",
+        "description": "Бұл мектепті жойғыңыз келетініне сенімдісіз бе? Бұл әрекетті қайтару мүмкін емес.",
+        "confirm": "Жою",
+        "cancel": "Бас тарту"
+      }
+    }
+  },
+  "adminQuizzes": {
+    "title": "Менің курстарым",
+    "loading": "Жүктелуде...",
+    "error": "Қате",
+    "createQuiz": "Тест құру",
+    "courseTopics": "Курс тақырыптары мен тесттері",
+    "noTopics": "Тақырыптар қолжетімді емес",
+    "preview": "Алдын ала қарау",
+    "sheet": {
+      "title": "Курс тақырыптары мен тесттері",
+      "description": "Курс тақырыптары мен тесттерін қарау және басқару"
+    }
+  },
+  "allQuizzes": {
+    "title": "Барлық тесттер",
+    "loading": "Жүктелуде...",
+    "searchPlaceholder": "Тесттерді атауы бойынша іздеу...",
+    "selectCourse": "Курсты таңдаңыз",
+    "difficultyLevel": {
+      "label": "Қиындық деңгейі",
+      "all": "Барлық деңгейлер",
+      "beginner": "Бастапқы",
+      "intermediate": "Орташа",
+      "advanced": "Жоғары"
+    },
+    "table": {
+      "quizTitle": "Тест атауы",
+      "course": "Курс",
+      "difficulty": "Қиындық",
+      "timeLimit": "Уақыт шегі",
+      "passingScore": "Өту балы",
+      "status": "Күйі",
+      "minutes": "минут",
+      "unknownCourse": "Белгісіз курс",
+      "noQuizzes": "Тесттер табылмады",
+      "draft": "Жоба",
+      "published": "Жарияланған"
+    },
+    "actions": {
+      "viewQuiz": "Тестті қарау",
+      "editQuiz": "Тестті өңдеу",
+      "deleteQuiz": "Тестті жою"
+    },
+    "dialog": {
+      "quizDetails": "Тест мәліметтері",
+      "description": "Сипаттама",
+      "helpGuidelines": "Нұсқаулық",
+      "timeLimit": "Уақыт шегі",
+      "passingScore": "Өту балы",
+      "questions": "Сұрақтар",
+      "noQuestions": "Сұрақтар табылмады",
+      "question": "Сұрақ",
+      "type": "Түрі",
+      "points": "Ұпайлар",
+      "explanation": "Түсіндірме",
+      "correctAnswer": "Дұрыс жауап"
+    },
+    "deleteConfirm": {
+      "title": "Тестті жою",
+      "description": "\"{{quizTitle}}\" тестін жойғыңыз келетініне сенімдісіз бе? Бұл әрекетті қайтару мүмкін емес.",
+      "confirm": "Жою",
+      "cancel": "Бас тарту"
+    }
+  },
+  "createQuiz": {
+    "title": {
+      "create": "Тест құру",
+      "edit": "Тестті өңдеу"
+    },
+    "courseInfo": {
+      "courseId": "URL-дегі курс ID-і",
+      "availableTopics": "Қолжетімді тақырыптар"
+    },
+    "form": {
+      "topic": {
+        "label": "Тақырып (Міндетті)",
+        "placeholder": "Тақырыпты таңдаңыз"
+      },
+      "title": {
+        "label": "Атауы (Міндетті)",
+        "placeholder": "Тест атауын енгізіңіз"
+      },
+      "difficultyLevel": {
+        "label": "Қиындық деңгейі (Міндетті)",
+        "placeholder": "Қиындық деңгейін таңдаңыз",
+        "beginner": "Бастапқы",
+        "intermediate": "Орташа",
+        "advanced": "Жоғары"
+      },
+      "visibility": {
+        "label": "Көрінуі (Міндетті)",
+        "placeholder": "Көріну түрін таңдаңыз",
+        "public": "Жалпыға қолжетімді",
+        "private": "Жеке",
+        "classOnly": "Тек сынып үшін"
+      },
+      "timeLimit": {
+        "label": "Уақыт шегі (Міндетті емес)",
+        "unit": "мин"
+      },
+      "description": {
+        "label": "Сипаттама (Міндетті емес)",
+        "placeholder": "Тест сипаттамасын енгізіңіз"
+      },
+      "passingScore": {
+        "label": "Өту балы (Міндетті)"
+      },
+      "totalPoints": {
+        "label": "Жалпы ұпай саны (Міндетті)"
+      },
+      "helpGuidelines": {
+        "label": "Нұсқаулық (Міндетті емес)",
+        "placeholder": "Нұсқаулықты енгізіңіз"
+      }
+    },
+    "questions": {
+      "title": "Сұрақтарды басқару",
+      "type": {
+        "label": "Сұрақ түрі",
+        "placeholder": "Сұрақ түрін таңдаңыз",
+        "multipleChoice": "Бірнеше таңдау",
+        "trueFalse": "Дұрыс/Бұрыс",
+        "shortAnswer": "Қысқа жауап"
+      },
+      "points": {
+        "label": "Ұпайлар"
+      },
+      "text": {
+        "label": "Сұрақ мәтіні",
+        "placeholder": "Сұрағыңызды осында енгізіңіз"
+      },
+      "options": {
+        "label": "Жауап нұсқалары",
+        "placeholder": "Нұсқа {{number}}"
+      },
+      "correctAnswer": {
+        "label": "Дұрыс жауап",
+        "placeholder": {
+          "select": "Дұрыс жауапты таңдаңыз",
+          "enter": "Дұрыс жауапты енгізіңіз"
+        },
+        "true": "Дұрыс",
+        "false": "Бұрыс"
+      },
+      "explanation": {
+        "label": "Түсіндірме (Міндетті емес)",
+        "placeholder": "Бұл жауаптың неге дұрыс екенін түсіндіріңіз"
+      },
+      "buttons": {
+        "add": "Сұрақ қосу",
+        "update": "Сұрақты жаңарту",
+        "cancelEdit": "Өңдеуден бас тарту"
+      }
+    },
+    "addedQuestions": {
+      "title": "Қосылған сұрақтар",
+      "question": "Сұрақ {{number}}",
+      "type": "Түрі",
+      "points": "Ұпайлар",
+      "buttons": {
+        "edit": "Өңдеу",
+        "delete": "Жою"
+      }
+    },
+    "buttons": {
+      "cancel": "Бас тарту",
+      "create": "Тест құру",
+      "update": "Тестті жаңарту",
+      "creating": "Құрылуда..."
+    },
+    "validation": {
+      "questionType": "Сұрақ түрі міндетті",
+      "questionText": "Сұрақ мәтіні міндетті",
+      "options": "Кемінде 2 жауап нұсқасы қажет",
+      "correctAnswer": "Дұрыс жауап міндетті",
+      "points": "Ұпайлар 1-ден көп болуы керек",
+      "topic": "Тақырып міндетті",
+      "title": "Атауы міндетті",
+      "difficultyLevel": "Қиындық деңгейі міндетті",
+      "timeLimit": "Уақыт шегі 1 минуттан көп болуы керек",
+      "passingScore": {
+        "required": "Өту балы міндетті",
+        "range": "Өту балы 0 мен 100 аралығында болуы керек"
+      },
+      "totalPoints": "Жалпы ұпай саны 1-ден көп болуы керек",
+      "visibility": "Көріну түрі міндетті",
+      "questions": {
+        "required": "Кемінде бір сұрақ қажет",
+        "pointsSum": "Ұпайлар сомасы тесттің жалпы ұпай санына сәйкес келуі керек"
+      }
+    },
+    "messages": {
+      "questionRequired": "Сұрақ мәтіні міндетті",
+      "correctAnswerRequired": "Дұрыс жауапты таңдаңыз",
+      "totalPointsExceeded": "Жалпы ұпай саны ({{total}}) тесттің жалпы ұпай санынан ({{max}}) асып кетті",
+      "correctAnswerMatch": "Дұрыс жауап нұсқалардың біреуіне дәл сәйкес келуі керек",
+      "questionAdded": "Сұрақ сәтті қосылды",
+      "questionUpdated": "Сұрақ сәтті жаңартылды",
+      "questionDeleted": "Сұрақ сәтті жойылды",
+      "loading": "Курс деректері жүктелуде...",
+      "error": "Қате",
+      "retry": "Қайталау"
+    }
+  },
+  "quizDetails": {
+    "error": {
+      "title": "Қате",
+      "quizNotFound": "Тест туралы ақпарат табылмады",
+      "loadingError": "Тест мәліметтерін жүктеу қатесі"
+    },
+    "loading": "Жүктелуде...",
+    "details": {
+      "title": "Тест мәліметтері",
+      "description": "Сипаттама",
+      "helpGuidelines": "Нұсқаулық",
+      "timeLimit": "Уақыт шегі",
+      "passingScore": "Өту балы",
+      "minutes": "минут"
+    },
+    "questions": {
+      "title": "Сұрақтар",
+      "noQuestions": "Сұрақтар табылмады",
+      "question": "Сұрақ",
+      "type": "Түрі",
+      "points": "Ұпайлар",
+      "explanation": "Түсіндірме"
+    }
+  },
+  "school": {
+    "logo": {
+      "preview": "Мектеп логотипін алдын ала қарау",
+      "removeSuccess": "Логотип сақтаудан кейін жойылады"
+    },
+    "error": {
+      "missingId": "Мектеп ID-сі жоқ"
+    },
+    "update": {
+      "loading": "Мектеп жаңартылуда...",
+      "success": "Мектеп сәтті жаңартылды",
+      "error": "Мектепті жаңарту сәтсіз аяқталды",
+      "inProgress": "Жаңартылуда...",
+      "button": "Мектепті жаңарту"
+    },
+    "create": {
+      "loading": "Мектеп құрылуда...",
+      "success": "Мектеп сәтті құрылды",
+      "error": "Мектепті құру сәтсіз аяқталды",
+      "inProgress": "Құрылуда...",
+      "button": "Мектеп құру"
+    },
+    "form": {
+      "logo": "Мектеп логотипі",
+      "name": "Мектеп атауы",
+      "description": "Сипаттама",
+      "website": "Веб-сайт",
+      "foundedYear": "Құрылған жылы",
+      "address": "Мекенжай",
+      "city": "Қала",
+      "country": "Ел",
+      "phone": "Телефон нөірі",
+      "email": "Электрондық пошта"
+    },
+    "validation": {
+      "nameRequired": "Мектеп атауын көрсету қажет",
+      "descriptionRequired": "Сипаттаманы көрсету қажет",
+      "websiteRequired": "Веб-сайтты көрсету қажет",
+      "foundedYearRequired": "Құрылған жылын көрсету қажет",
+      "foundedYearInvalid": "Жарамды жылды енгізіңіз",
+      "addressRequired": "Мекенжайды көрсету қажет",
+      "cityRequired": "Қаланы көрсету қажет",
+      "countryRequired": "Елді көрсету қажет",
+      "phoneRequired": "Телефон нөмірін көрсету қажет",
+      "emailRequired": "Электрондық поштаны көрсету қажет"
+    }
+  },
+  "enrollment": {
+    "title": "Барлық тіркелу өтініштері",
+    "subtitle": "Сіздің курстарыңызға студенттердің тіркелу өтініштерін қарау және басқару",
+    "status": {
+      "label": "Күй",
+      "filterPlaceholder": "Күй бойынша сүзу",
+      "all": "Барлық күйлер",
+      "onHold": "Күтуде",
+      "active": "Белсенді",
+      "completed": "Аяқталған",
+      "validated": "Расталған"
+    },
+    "empty": {
+      "all": "Өтініштер табылмады",
+      "filtered": "{{status}} күйіндегі өтініштер жоқ",
+      "allDescription": "Қазіргі уақытта қарастырылатын өтініштер жоқ",
+      "filteredDescription": "Қазіргі уақытта {{status}} күйіндегі өтініштер жоқ"
+    },
+    "course": {
+      "notFound": "Курс табылмады",
+      "noDescription": "Сипаттама жоқ"
+    },
+    "user": {
+      "student": "Студент"
+    },
+    "action": {
+      "viewDetails": "Толық мәлімет"
+    },
+    "dialog": {
+      "title": "Тіркелу өтінішінің мәліметтері",
+      "description": "Тіркелу өтінішін қарау және мақұлдау",
+      "courseInfo": "Курс туралы ақпарат",
+      "studentInfo": "Студент туралы ақпарат",
+      "email": "Электрондық пошта",
+      "role": "Рөл",
+      "status": "Күй",
+      "cancel": "Бас тарту",
+      "approving": "Мақұлдануда...",
+      "approve": "Өтінішті мақұлдау"
+    },
+    "activation": {
+      "success": "Тіркелу сәтті белсендірілді",
+      "error": "Тіркелуді белсендіру сәтсіз аяқталды"
+    }
+  },
+  "courseForm": {
+    "content": {
+      "syllabus": {
+        "unknownTopic": "Белгісіз тақырып"
+      },
+      "upload": {
+        "success": "Бейне сәтті жүктелді",
+        "error": "Бейне орнын жаңарту сәтсіз аяқталды",
+        "invalidFile": "Жарамды бейне файлын таңдаңыз",
+        "noFile": "Файл таңдалмаған",
+        "uploading": "Жүктелуде...",
+        "videoUploaded": "Бейне жүктелді",
+        "videoUploads": "Бейне жүктеулер",
+        "uploadingVideos": "Бейне жүктелуде ({{count}} белсенді)",
+        "uploadsFailed": "{{count}} жүктеу сәтсіз аяқталды",
+        "uploadsCompleted": "{{count}} жүктеу аяқталды",
+        "noActiveUploads": "Белсенді жүктеулер жоқ",
+        "listCleared": "Жүктеу тізімі тазартылды",
+        "completedUploads": "Аяқталған жүктеулер ({{count}})",
+        "retrying": "{{topic}} үшін қайта жүктеу",
+        "removed": "{{topic}} үшін жүктеу жойылды",
+        "videoUpdates": "Бейне жаңарту",
+        "updatingVideos": "Бейне жаңартылуда ({{count}} белсенді)",
+        "updatesCompleted": "{{count}} жаңарту аяқталды",
+        "completedUpdates": "Аяқталған жаңартулар ({{count}})",
+        "updateSuccess": "Бейне сәтті жаңартылды"
+      }
+    },
+    "title": {
+      "update": "Курсты жаңарту",
+      "create": "Курс құру"
+    },
+    "schoolCoursesManage": {
+      "title": "Мектеп курстарын басқару",
+      "noCourses": "Бұл мектеп үшін курстар табылмады",
+      "courseDetails": {
+        "price": "Бағасы",
+        "language": "Тілі",
+        "courseInfo": "Курс туралы ақпарат",
+        "requirements": "Талаптар",
+        "learningObjectives": "Оқу мақсаттары",
+        "courseContent": "Курс мазмұны",
+        "aboutCourse": "Курс туралы",
+        "featuredImage": "Басты сурет",
+        "thumbnailImage": "Миниатюра",
+        "duration": "Ұзақтығы"
+      },
+      "actions": {
+        "edit": "Өңдеу",
+        "delete": "Жою",
+        "back": "Артқа"
+      }
+    },
+    "navigation": {
+      "previous": "Артқа",
+      "next": "Келесі"
+    },
+    "steps": {
+      "basicInfo": "Негізгі ақпарат",
+      "media": "Медиа",
+      "content": "Мазмұны",
+      "pricing": "Бағасы",
+      "progress":"Прогресс"
+    },
+    "validation": {
+      "title": "Атауын көрсету қажет",
+      "description": "Сипаттаманы көрсету қажет",
+      "longDescription": "Толық сипаттаманы көрсету қажет",
+      "school": "Мектепті көрсету қажет",
+      "language": "Тілді көрсету қажет",
+      "category": "Санатты көрсету қажет",
+      "price": "Бағасын көрсету қажет",
+      "subtitles": "Кем дегенде бір субтитр қосу қажет",
+      "tags": "Кем дегенде бір тег қосу қажет",
+      "featuredImage": "Басты суретті қосу қажет",
+      "thumbnail": "Миниатюраны қосу қажет",
+      "syllabus": "Кем дегенде бір бөлім мен тақырып қосу қажет",
+      "learningObjectives": "Кем дегенде бір оқу мақсатын қосу қажет",
+      "requirements": "Кем дегенде бір талапты қосу қажет"
+    },
+    "messages": {
+      "updateSuccess": "Курс сәтті жаңартылды",
+      "updateError": "Курсты жаңарту сәтсіз аяқталды",
+      "uploadingMedia": "Медиа файлдар жүктелуде...",
+      "uploadingVideo": "{{section}}-бөлім, {{topic}}-тақырып үшін видео жүктелуде...",
+      "retry": "Қайталау"
+    },
+    "basicInfo": {
+      "title": "Курс атауы",
+      "titlePlaceholder": "Курс атауын енгізіңіз",
+      "shortDescription": "Қысқаша сипаттама",
+      "descriptionPlaceholder": "Қысқаша сипаттаманы енгізіңіз",
+      "detailedDescription": "Толық сипаттама",
+      "longDescriptionPlaceholder": "Курстың толық сипаттамасын енгізіңіз",
+      "school": "Мектеп",
+      "selectSchool": "Мектепті таңдаңыз",
+      "category": "Санат",
+      "selectCategory": "Санатты таңдаңыз",
+      "language": "Тіл",
+      "selectLanguage": "Курс тілін таңдаңыз",
+      "validation": {
+        "titleRequired": "Курс атауы міндетті",
+        "descriptionRequired": "Курс сипаттамасы міндетті",
+        "longDescriptionRequired": "Толық сипаттама міндетті",
+        "schoolRequired": "Мектеп міндетті",
+        "categoryRequired": "Санат міндетті",
+        "languageRequired": "Тіл міндетті"
+      }
+    },
+    "content": {
+      "learningObjectives": {
+        "title": "Оқу мақсаттары",
+        "description": "Курсты аяқтағаннан кейін білім алушылар қол жеткізетін кем дегенде 3 мақсатты қосыңыз",
+        "placeholder": "Оқу мақсатын енгізіңіз",
+        "addButton": "Оқу мақсатын қосу"
+      },
+      "requirements": {
+        "title": "Курс талаптары",
+        "addButton": "Талап қосу",
+        "placeholder": "Курс талабын енгізіңіз",
+        "minLength": "Талап кем дегенде 10 таңбадан тұруы керек"
+      },
+      "syllabus": {
+        "title": "Курс бағдарламасы",
+        "addSection": "Бөлім қосу",
+        "sectionTitle": "Бөлім атауы",
+        "addTopic": "Тақырып қосу",
+        "topicTitle": "Тақырып атауы",
+        "uploadVideo": "Бейне жүктеу",
+        "validation": {
+          "noSections": "Бағдарлама бөлімдері табылмады",
+          "noTopics": "{{section}}-бөлімде тақырыптар жоқ",
+          "noTitle": "{{section}}-бөлімнің атауы жоқ",
+          "noTopicTitle": "{{section}}-бөлімдегі {{topic}}-тақырыптың атауы жоқ",
+          "noDuration": "{{section}}-бөлімдегі {{topic}}-тақырыптың ұзақтығы жоқ",
+          "noVideo": "{{section}}-бөлімдегі {{topic}}-тақырыптың бейнесі жоқ",
+          "waitUploads": "Барлық бейнелердің жүктелуін күтіңіз",
+          "noRequirements": "Талаптар табылмады",
+          "emptyRequirement": "Бос талап табылды"
+        }
+      },
+      "upload": {
+        "success": "Бейне сәтті жүктелді",
+        "error": "Бейне орнын жаңарту сәтсіз аяқталды",
+        "invalidFile": "Жарамды бейне файлын таңдаңыз",
+        "noFile": "Файл таңдалмаған"
+      }
+    },
+    "media": {
+      "featuredImage": {
+        "title": "Басты сурет",
+        "description": "Бұл сурет курс бетінде көрсетіледі",
+        "upload": {
+          "title": "Басты суретті жүктеу",
+          "description": "PNG, JPG 10МБ дейін"
+        }
+      },
+      "thumbnail": {
+        "title": "Курс миниатюрасы",
+        "description": "Бұл сурет курстар тізімінде және іздеу нәтижелерінде көрсетіледі",
+        "upload": {
+          "title": "Миниатюраны жүктеу",
+          "description": "PNG, JPG 10МБ дейін"
+        }
+      },
+      "requirements": {
+        "title": "Суретке қойылатын талаптар",
+        "featuredSize": "Басты сурет: Ұсынылатын өлшемі 1200x600 пиксель",
+        "thumbnailSize": "Миниатюра: Ұсынылатын өлшемі 640x360 пиксель",
+        "maxSize": "Максималды файл көлемі: 10МБ",
+        "formats": "Қолдау көрсетілетін форматтар: PNG, JPG"
+      },
+      "validation": {
+        "invalidType": "Файл түрі дұрыс емес. Тек PNG және JPG суреттеріне рұқсат етілген.",
+        "tooLarge": "Файл тым үлкен. Максималды көлемі 10МБ."
+      }
+    },
+    "pricing": {
+      "title": "Курс бағасы",
+      "price": {
+        "label": "Курс бағасы",
+        "placeholder": "Курс бағасын енгізіңіз",
+        "hint": "Курстың құндылығын көрсететін бәсекеге қабілетті бағаны есте сақтаңыз"
+      },
+      "tags": {
+        "title": "Курс тегтері",
+        "label": "Тегтер",
+        "placeholder": "Тег қосу",
+        "guidelines": {
+          "title": "Тег нұсқаулары",
+          "items": [
+            "Студенттер сіздің курсыңызды таба алуы үшін қатысты тегтерді қосыңыз",
+            "Кіші әріптерді қолданыңыз және арнайы таңбалардан аулақ болыңыз",
+            "Тегтерді қысқа және сипаттамалы етіп сақтаңыз",
+            "Бірнеше сөзді сызықшамен бөліңіз (мысалы, \"веб-әзірлеу\")"
+          ]
+        }
+      },
+      "subtitles": {
+        "title": "Қолжетімді субтитрлер",
+        "label": "Субтитрлер",
+        "placeholder": "Тілді таңдаңыз",
+        "guidelines": {
+          "title": "Субтитр нұсқаулары",
+          "items": [
+            "Кем дегенде бір субтитр тілін қосыңыз",
+            "Субтитр файлдарының дәл синхрондалғанына көз жеткізіңіз",
+            "Кәсіби аударма ұсынылады",
+            "Оңнан солға жазылатын тілдерді қолдау (араб, иврит)"
+          ]
+        }
+      },
+      "features": {
+        "title": "Курс мүмкіндіктері"
+      },
+      "validation": {
+        "priceRequired": "Курс бағасы міндетті",
+        "priceMin": "Баға 0-ден жоғары болуы керек"
+      }
+    }
+  },
+  "enrolledCourses": {
+    "title": "Менің курстарым",
+    "subtitle": "Мұнда сіз жазылған курстар көрсетілген",
+    "noCourses": {
+      "title": "Курстар табылмады",
+      "description": "Сіз әлі ешбір курсқа жазылған жоқсыз."
+    },
+    "error": {
+      "loadingFailed": "Сіздің курстарыңызды жүктеу мүмкін болмады. Кейінірек қайталап көріңіз."
+    },
+    "selfPaced": "Өз қарқынмен",
+    "allLevels": "Барлық деңгейлер",
+    "enrolled": "{{count}} оқушы"
+  },
+  "schoolCoursesManage": {
+    "title": "Мектеп курстарын басқару",
+    "noCourses": "Бұл мектеп үшін курстар табылмады",
+    "courseDetails": {
+      "price": "Бағасы",
+      "language": "Тілі",
+      "courseInfo": "Курс туралы ақпарат",
+      "requirements": "Талаптар",
+      "learningObjectives": "Оқу мақсаттары",
+      "courseContent": "Курс мазмұны",
+      "aboutCourse": "Курс туралы",
+      "featuredImage": "Басты сурет",
+      "thumbnailImage": "Миниатюра",
+      "duration": "Ұзақтығы"
+    },
+    "actions": {
+      "edit": "Өңдеу",
+      "delete": "Жою",
+      "back": "Артқа"
+    }
+  },
+  "learningPath": {
+    "title": "Java-ны үйрену жолыңыз",
+    "subtitle": "Негізгіден кәсіби деңгейге дейін жылжыңыз!",
+    "progress": "Үлгерім: {{progress}}%",
+    "steps": {
+      "basics": {
+        "title": "Java негіздері",
+        "description": "Синтаксис пен тілдің негіздерін үйрену."
+      },
+      "oop": {
+        "title": "Java-дағы ООБ",
+        "description": "Объектіге бағытталған бағдарламалау принциптерін түсіну."
+      },
+      "spring": {
+        "title": "Spring Boot Framework",
+        "description": "Spring Boot-та веб-қосымшаларды әзірлеу."
+      },
+      "microservices": {
+        "title": "Микросервистер",
+        "description": "Микросервистік архитектура негізінде таратылған жүйелерді құру."
+      },
+      "finalProject": {
+        "title": "Жоба: Соңғы өнім",
+        "description": "Үйренген технологияларды қолданып өз жобаңызды жүзеге асыру."
+      }
+    },
+    "finalStep": {
+      "title": "Java әзірлеуші",
+      "description": "Сіз жолдың шыңына жеттіңіз! 🎉"
+    }
+  },
+  "schedule": {
+    "title": "Сабақ кестесі",
+    "subtitle": "Сабақтардың ұзақтығын біліп, меңгеру уақытын бағалаңыз!",
+    "duration": "{{hours}} сағат",
+    "difficulty": {
+      "label": "Күрделілік",
+      "easy": "Оңай",
+      "medium": "Орташа",
+      "hard": "Күрделі"
+    },
+    "mastery": "Меңгеру",
+    "days": "{{count}} күн",
+    "days_1": "{{count}} күн",
+    "days_2": "{{count}} күн",
+    "days_5": "{{count}} күн",
+    "status": {
+      "inProgress": "Үдерісте",
+      "upcoming": "Алдағы"
+    }
+  },
+  "sidebar": {
+    "student": {
+      "title": "Оқу порталы",
+      "myCourses": "Менің курстарым",
+      "learningPath": "Оқу жолы",
+      "schedule": "Кесте",
+      "assignments": "Тапсырмалар",
+      "forums": "Талқылау форумдары",
+      "certificates": "Сертификаттар",
+      "progress": "Үлгерімді бақылау",
+      "history": "Оқу тарихы",
+      "settings": "Параметрлер"
+    },
+    "schoolAdmin": {
+      "title": "Мектепті басқару",
+      "dashboard": "Басқару тақтасы",
+      "schools": "Мектептер",
+      "courses": "Курстар",
+      "categories": "Санаттар",
+      "quizzes": "Тесттер",
+      "students": "Студенттер",
+      "studentRequests": "Студенттердің өтініштері",
+      "addSchool": "Мектеп қосу",
+      "createCourse": "Курс құру",
+      "calendar": "Курс күнтізбесі",
+      "discussions": "Талқылаулар",
+      "settings": "Параметрлер",
+      "descriptions": {
+        "dashboard": "Мектепті басқарудың негізгі тақтасы",
+        "schools": "Мектептерді басқару және конфигурациялау",
+        "courses": "Курстарды құру және өңдеу",
+        "categories": "Курс санаттарын басқару",
+        "quizzes": "Тесттерді құру және басқару",
+        "students": "Студенттерді қарау және басқару",
+        "studentRequests": "Түсу өтініштерін өңдеу",
+        "addSchool": "Жаңа мектепті тіркеу",
+        "createCourse": "Жаңа оқу курсын құру",
+        "calendar": "Курстарды жоспарлау және кесте",
+        "discussions": "Курс форумдары мен талқылаулары",
+        "settings": "Жүйе және профиль параметрлері"
+      }
+    },
+    "superAdmin": {
+      "title": "Әкімші консолі",
+      "dashboard": "Басқару тақтасы",
+      "schoolsManagement": "Мектептерді басқару",
+      "userManagement": "Пайдаланушыларды басқару",
+      "courseManagement": "Курстарды басқару",
+      "categories": "Санаттар",
+      "contentManagement": "Контентті басқару",
+      "analytics": "Талдау",
+      "systemSettings": "Жүйе параметрлері",
+      "security": "Қауіпсіздік",
+      "notifications": "Хабарландырулар",
+      "support": "Қолдау"
+    },
+    "blogAdmin": {
+      "title": "Блог басқару",
+      "overview": "Шолу",
+      "posts": "Жазбалар",
+      "categories": "Санаттар",
+      "comments": "Пікірлер",
+      "tags": "Тегтер",
+      "likes": "Лайктар",
+      "views": "Қаралымдар",
+      "analytics": "Талдау",
+      "settings": "Параметрлер"
+    },
+    "overview": "Шолу",
+    "syllabus": "Оқу жоспары",
+    "quizzes": "Тесттер",
+    "progress": "Прогресс",
+    "courseContent": "Курс мазмұны",
+    "watchVideo": "Видеоны қараңыз ({{progress}}%)",
+    "completed": "Аяқталды",
+    "courseDuration": "Курс ұзақтығы",
+    "selfPaced": "Өз қарқынмен",
+    "sectionsCount": "Бөлімдер саны",
+    "topicsCount": "Тақырыптар саны",
+    "videoPlayer": "Видеоплеер",
+    "videoPlayerDescription": "Таңдалған курс тақырыбына арналған видеоплеер",
+    "courseMenu": "Курс мәзірі",
+    "learningMaterials": "Оқу материалдары",
+    "overviewDescription": "Курс туралы толық ақпарат",
+    "syllabusDescription": "Курс бағдарламасы мен құрылымы",
+    "quizzesDescription": "Практикалық тесттер мен бағалаулар",
+    "progressDescription": "Оқу прогресіңізді бақылаңыз",
+    "courseStats": "Курс статистикасы"
+  },
+  "quiz": {
+    "student": {
+      "title": "Тест",
+      "timeLimit": "{{minutes}} минут",
+      "passingScore": "Өту балы: {{score}}%",
+      "question": "Сұрақ {{number}}",
+      "points": "Ұпай: {{count}}",
+      "answerPlaceholder": "Жауабыңызды осында енгізіңіз...",
+      "submit": "Тестті тапсыру"
+    },
+    "cancel": {
+      "title": "Тестті болдырмау керек пе?",
+      "description": "Тестті болдырмау керектігіне сенімдісіз бе? Сіздің үлгеріміңіз жоғалады.",
+      "continueButton": "Тестті жалғастыру",
+      "cancelButton": "Тестті болдырмау"
+    },
+    "result": {
+      "title": "Тест нәтижелері",
+      "submitting": "Тест жіберілуде...",
+      "gradingMessage": "Сіздің жауаптарыңызды тексергенше күте тұрыңыз...",
+      "congratulations": "Құттықтаймыз!",
+      "passedMessage": "Сіз {{score}}/{{total}} нәтижесімен тестті тапсырдыңыз!",
+      "failedMessage": "Сіздің нәтижеңіз: {{score}}/{{total}}. Жаттығуды жалғастырыңыз!",
+      "attempt": "Әрекет #{{number}}",
+      "returnButton": "Курсқа оралу"
+    },
+    "timeDisplay": {
+      "title": "Қалған уақыт"
+    },
+    "intro": {
+      "backToQuizzes": "Тесттерге оралу",
+      "timeLimit": "Уақыт шегі: {{minutes}} минут",
+      "questions": "Сұрақтар: {{count}}",
+      "passingScore": "Өту балы: {{score}}%",
+      "termsAgreement": "Мен бұл тест кезінде сыртқы ресурстарды немесе көмекті пайдаланбауға келісемін. Менің әрекетім жазылатынын түсінемін.",
+      "startQuiz": "Тестті бастау"
+    }
+  },
+  "errorBoundary": {
+    "title": "Бірдеңе дұрыс болмады",
+    "message": "Кейінірек қайталап көріңіз."
+  },
+  "help": "Көмек",
+  "rules": "Қызмет көрсету шарттары",
+  "help_text": "Егер сізде сұрақтар туындаса, біздің қолдау тобы әрқашан сізге көмектесуге дайын:",
+  "answer_placeholder": "Мұнда \"{question}\" сұрағына жауап болады",
+  "write_to_us": "Бізге жазыңыз",
+  "write_to_us_text": "Сұрағыңызға жауап таба алмадыңыз ба? Бізге жазыңыз",
+  "write_to_us_button": "Бізге жазыңыз",
+  "needHelp": "Көмек керек пе?",
+  "shareOpinion": "Өз пікіріңізбен бөлісіңіз, сұрақ қойыңыз немесе мәселе туралы хабарлаңыз",
+  "name": "Аты",
+  "phone": "Телефон",
+  "email": "Электрондық пошта",
+  "message": "Хабарлама",
+  "send": "Жіберу",
+  "courses": "Курстар",
+  "search_school": "Мектепті іздеу",
+  "videoPlayer": {
+    "selectTopic": "Көру үшін тақырып таңдаңыз",
+    "error": "Бейнені жүктеу қатесі",
+    "invalidUrl": "Жарамсыз бейне URL",
+    "accessError": "Бейнеге қол жеткізу қатесі",
+    "savingProgress": "Прогресс сақталуда..."
+  },
+  "courseStudents": {
+    "title": "Курс студенттері",
+    "description": "{{courseTitle}} курсына жазылған студенттерді қарау және басқару",
+    "table": {
+      "name": "Аты",
+      "email": "Email",
+      "status": "Күйі",
+      "progress": "Прогресс",
+      "enrolledAt": "Жазылған күні",
+      "lastAccessed": "Соңғы кіру"
+    },
+    "progress": {
+      "overall": "Жалпы",
+      "videos": "Видеолар",
+      "quizzes": "Тесттер",
+      "video": "Видео",
+      "lastWatched": "Соңғы көрілген:",
+      "quizScore": "Тест нәтижесі:",
+      "lastAttempt": "Соңғы әрекет:"
+    },
+    "dialog": {
+      "title": "Студент прогресінің мәліметтері",
+      "description": "{{email}} үшін толық прогресс ақпараты",
+      "overallProgress": "Жалпы прогресс",
+      "componentsCompleted": "{{total}} компоненттің {{completed}} аяқталды",
+      "videosProgress": "Видео прогресі",
+      "quizzesProgress": "Тест прогресі",
+      "videos": "Видеолар",
+      "quizzes": "Тесттер",
+      "close": "Жабу"
+    }
+  },
+  "schoolStudentCourses": {
+    "title": "Мектеп курстары",
+    "studentsManagement": "Студенттерді басқару",
+    "loading": "Курстар жүктелуде...",
+    "error": "Курстарды жүктеу қатесі: {{message}}",
+    "noSchoolSelected": "Курстар мен студенттерді көру үшін бүйірлік панельден мектепті таңдаңыз.",
+    "noCourses": "Бұл мектеп үшін курстар табылмады.",
+    "schoolId": "Мектеп ID-і: {{schoolId}}"
+  },
+  "courseProgress": {
+    "title": "Сіздің прогресіңіз",
+    "lastUpdated": "Соңғы жаңарту",
+    "never": "Ешқашан",
+    "overall": {
+      "title": "Жалпы прогресс",
+      "description": "{{total}} тапсырманың {{completed}} орындалды"
+    },
+    "videos": {
+      "title": "Видео сабақтар",
+      "completed": "Көрілді"
+    },
+    "quizzes": {
+      "title": "Тест тапсыру",
+      "completed": "Аяқталды"
+    },
+    "summary": {
+      "totalTasks": "{{completed}}/{{total}} тапсырма орындалды"
+    },
+    "requirements": {
+      "title": "Талаптар"
+    },
+    "objectives": {
+      "title": "Оқу мақсаттары"
+    }
+  },
+  "quizSidebar": {
+    "myCourses": "Менің курстарым",
+    "myCoursesDesc": "Сіз жазылған курслар",
+    "allQuizzes": "Барлық тесттер",
+    "allQuizzesDesc": "Барлық қолжетімді тесттерді шолу",
+    "title": "Тесттер және оқу",
+    "subtitle": "Біліміңізді арттырыңыз",
+    "footer": "Оқуды жалғастырыңыз"
+  },
+  "blog": {
+    "validation": {
+      "title": {
+        "min": "Тақырып тым қысқа (ең аз {{min}} таңба)",
+        "max": "Тақырып тым ұзын (ең көп {{max}} таңба)",
+        "required": "Тақырып міндетті"
+      },
+      "content": {
+        "min": "Мазмұн тым қысқа (ең аз {{min}} таңба)",
+        "required": "Мазмұн міндетті"
+      },
+      "type": {
+        "required": "Түрі міндетті"
+      },
+      "status": {
+        "required": "Статус міндетті"
+      },
+      "category": {
+        "required": "Санат міндетті"
+      },
+      "image": {
+        "required": "Сурет міндетті"
+      }
+    },
+    "dialog": {
+      "create": {
+        "title": "Жаңа жазба жасау",
+        "description": "Блогқа жаңа жазба қосу үшін төмендегі форманы толтырыңыз"
+      }
+    },
+    "form": {
+      "title": {
+        "label": "Тақырып",
+        "placeholder": "Жазба тақырыбын енгізіңіз"
+      },
+      "tags": {
+        "label": "Тегтер",
+        "placeholder": "Тегтерді үтірмен бөліп жазыңыз"
+      },
+      "category": {
+        "label": "Санат",
+        "placeholder": "Санатты таңдаңыз"
+      },
+      "status": {
+        "label": "Статус",
+        "placeholder": "Жазба статусын таңдаңыз"
+      },
+      "image": {
+        "label": "Сурет"
+      },
+      "content": {
+        "label": "Мазмұн",
+        "placeholder": "Жазба мазмұнын осында жазыңыз..."
+      },
+      "create": "Жасау"
+    },
+    "post": {
+      "status": {
+        "draft": "Қарсы алу",
+        "published": "Жарияланған"
+      }
+    }
+  },
+  "admin": {
+    "blog": {
+      "sidebar": {
+        "overview": "Жалпы шолу",
+        "posts": "Жазбалар",
+        "categories": "Санаттар",
+        "comments": "Пікірлер",
+        "tags": "Тегтер",
+        "likes": "Ұнатулар",
+        "views": "Қаралулар",
+        "settings": "Баптаулар"
+      }
+    }
+  }
+}

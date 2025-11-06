@@ -1,0 +1,26 @@
+maybe something like this initialValues: savedFormData || {
+ title: '',
+ description: '',
+ longDescription: '',
+ schoolId: '',
+ language: '',
+ categoryId: '',
+ featuredImageUrl: null,
+ thumbnailUrl: null,
+ learningObjectives: [''],
+ requirements: [''],
+ module: [{
+  title: '',
+  lectures: 0,
+  duration: '00:00:00',
+  thumbnailUrl: '',
+  topics: [{
+   title: '',
+   duration: '00:00:00',
+   isPreview: false,
+   videoUrl: ''
+  }]
+ }],
+ price: '',
+ subtitles: ['']
+},

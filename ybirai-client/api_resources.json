@@ -1,0 +1,3286 @@
+{
+    "items": [
+        {
+            "id": "0ayxa2",
+            "parentId": "8zphg3s498",
+            "pathPart": "courses",
+            "path": "/courses",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/courses",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "0ayxa2",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept-Language,Accept'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "0cotlt",
+            "parentId": "8zphg3s498",
+            "pathPart": "quizzes",
+            "path": "/quizzes",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/quizzes",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "0cotlt",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/quizzes",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "0cotlt",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "0ibf6k",
+            "parentId": "evgvec",
+            "pathPart": "by-assignment",
+            "path": "/student-assignments/by-assignment",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments/by-assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "0ibf6k",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "1wvgo5",
+            "parentId": "8zphg3s498",
+            "pathPart": "comment",
+            "path": "/comment",
+            "resourceMethods": {
+                "OPTIONS": {
+                    "httpMethod": "OPTIONS",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "MOCK",
+                        "requestTemplates": {
+                            "application/json": "{\"statusCode\": 200}"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "1wvgo5",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://user.ybyraihub.kz/api/comment",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "1wvgo5",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "24n86u",
+            "parentId": "bew35n",
+            "pathPart": "id",
+            "path": "/quiz-questions/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-questions",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "24n86u",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-questions/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "24n86u",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-questions",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "24n86u",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "38qjfa",
+            "parentId": "wa98gy",
+            "pathPart": "id",
+            "path": "/posts/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://user.ybyraihub.kz/api/post/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "38qjfa",
+                        "cacheKeyParameters": [
+                            "method.request.header.Accept-Language"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://user.ybyraihub.kz/api/post/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "38qjfa",
+                        "cacheKeyParameters": [
+                            "method.request.header.Accept-Language"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept,Accept-Language'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://user.ybyraihub.kz/api/post/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "38qjfa",
+                        "cacheKeyParameters": [
+                            "method.request.header.Accept-Language"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Content-Type'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'PUT,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "42ze62",
+            "parentId": "8zphg3s498",
+            "pathPart": "lessons",
+            "path": "/lessons",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/lesson",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "42ze62",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/lesson",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "42ze62",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "6eie1v",
+            "parentId": "8zphg3s498",
+            "pathPart": "course-progress",
+            "path": "/course-progress",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/course-progress",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "6eie1v",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/course-progress",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "6eie1v",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "6xc6ck",
+            "parentId": "evgvec",
+            "pathPart": "id",
+            "path": "/student-assignments/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "6xc6ck",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "6xc6ck",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "6xc6ck",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "8f2fkf",
+            "parentId": "hch70b",
+            "pathPart": "id",
+            "path": "/sections/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/section/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "8f2fkf",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/section/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "8f2fkf",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Acccept-Language": false,
+                        "method.request.header.Accept": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/section/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "8f2fkf",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "8jyh4y",
+            "parentId": "42ze62",
+            "pathPart": "id",
+            "path": "/lessons/id",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/lesson/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "8jyh4y",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/lesson/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "8jyh4y",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "8zphg3s498",
+            "path": "/"
+        },
+        {
+            "id": "bew35n",
+            "parentId": "8zphg3s498",
+            "pathPart": "quiz-questions",
+            "path": "/quiz-questions",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-questions",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "bew35n",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-questions",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "bew35n",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "cdd9gx",
+            "parentId": "0cotlt",
+            "pathPart": "id",
+            "path": "/quizzes/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/quizzes/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "cdd9gx",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/quizzes/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "cdd9gx",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/quizzes/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "cdd9gx",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "e7cpp0",
+            "parentId": "fca9gd",
+            "pathPart": "id",
+            "path": "/course-categories/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/categories/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "e7cpp0",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/categories/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "e7cpp0",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/categories/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "e7cpp0",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "evgvec",
+            "parentId": "8zphg3s498",
+            "pathPart": "student-assignments",
+            "path": "/student-assignments",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "evgvec",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/student-assignments",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "evgvec",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "fbcq5e",
+            "parentId": "6eie1v",
+            "pathPart": "id",
+            "path": "/course-progress/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/course-progress/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "fbcq5e",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/course-progress/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "fbcq5e",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": false,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/course-progress/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "fbcq5e",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "fca9gd",
+            "parentId": "8zphg3s498",
+            "pathPart": "course-categories",
+            "path": "/course-categories",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/categories",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "fca9gd",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept,Accept-Language'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/categories",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "fca9gd",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "gy4owl",
+            "parentId": "8zphg3s498",
+            "pathPart": "reviews",
+            "path": "/reviews",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/reviews",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "gy4owl",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept-Language,Accept'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/reviews",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "gy4owl",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "hch70b",
+            "parentId": "8zphg3s498",
+            "pathPart": "sections",
+            "path": "/sections",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/section",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "hch70b",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/section",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "hch70b",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "hpwr59",
+            "parentId": "zoar8r",
+            "pathPart": "{id}",
+            "path": "/student/{id}",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.path.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://user.ybyraihub.kz/api/student/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "hpwr59",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": false,
+                        "method.request.path.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://user.ybyraihub.kz/api/student/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "hpwr59",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "OPTIONS": {
+                    "httpMethod": "OPTIONS",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "MOCK",
+                        "requestTemplates": {
+                            "application/json": "{\"statusCode\": 200}"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "hpwr59",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "iu93vh",
+            "parentId": "schcxy",
+            "pathPart": "id",
+            "path": "/assignments/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "iu93vh",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "iu93vh",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/assignments/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "iu93vh",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "jjeff7",
+            "parentId": "gy4owl",
+            "pathPart": "id",
+            "path": "/reviews/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/reviews/{id}",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "jjeff7",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/reviews/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "jjeff7",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/reviews/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "jjeff7",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "mnblix",
+            "parentId": "1wvgo5",
+            "pathPart": "id",
+            "path": "/comment/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://user.ybyraihub.kz/api/comment/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "mnblix",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.commentId": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://user.ybyraihub.kz/api/comment/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.commentId": "method.request.path.commentId"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "mnblix",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "nebwgt",
+            "parentId": "8zphg3s498",
+            "pathPart": "school",
+            "path": "/school",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://user.ybyraihub.kz/api/school",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "nebwgt",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "nnfwij",
+            "parentId": "sg107d",
+            "pathPart": "quizId",
+            "path": "/quize-game/quizId",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.quizId": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-game/{quizId}/questions",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.quizId": "method.request.path.quizId"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "nnfwij",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.quizId": true
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-game/{quizId}/start",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.quizId": "method.request.path.quizId"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "nnfwij",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "pna1p5",
+            "parentId": "0ayxa2",
+            "pathPart": "id",
+            "path": "/courses/id",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept-Language": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/courses/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "pna1p5",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept,Accept-Language'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "q8sdcl",
+            "parentId": "8zphg3s498",
+            "pathPart": "enrollments",
+            "path": "/enrollments",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": false,
+                        "method.request.header.Content-Type": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://ums.ybyraihub.kz/api/enrollments",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "q8sdcl",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "ru0u6g",
+            "parentId": "ywd4sg",
+            "pathPart": "id",
+            "path": "/resource/id",
+            "resourceMethods": {
+                "DELETE": {
+                    "httpMethod": "DELETE",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "DELETE",
+                        "uri": "https://course.ybyraihub.kz/api/resources/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "ru0u6g",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/resources/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "ru0u6g",
+                        "cacheKeyParameters": [
+                            "integration.request.path.id"
+                        ],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false,
+                        "method.request.querystring.id": true
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://course.ybyraihub.kz/api/resources/{id}",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type",
+                            "integration.request.path.id": "method.request.path.id"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "ru0u6g",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "schcxy",
+            "parentId": "8zphg3s498",
+            "pathPart": "assignments",
+            "path": "/assignments",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/assignments",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "schcxy",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/assignments",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "schcxy",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "sg107d",
+            "parentId": "8zphg3s498",
+            "pathPart": "quize-game",
+            "path": "/quize-game",
+            "resourceMethods": {
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/quiz-game/submit",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "sg107d",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "wa98gy",
+            "parentId": "8zphg3s498",
+            "pathPart": "posts",
+            "path": "/posts",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "NONE",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://user.ybyraihub.kz/api/post",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "wa98gy",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Accept-Language,Accept'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://user.ybyraihub.kz/api/post",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "wa98gy",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "ywd4sg",
+            "parentId": "8zphg3s498",
+            "pathPart": "resource",
+            "path": "/resource",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://course.ybyraihub.kz/api/resources",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "ywd4sg",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "POST": {
+                    "httpMethod": "POST",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": true,
+                        "method.request.header.Content-Type": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "POST",
+                        "uri": "https://course.ybyraihub.kz/api/resources",
+                        "connectionType": "INTERNET",
+                        "requestParameters": {
+                            "integration.request.header.Accept": "method.request.header.Accept",
+                            "integration.request.header.Accept-Language": "method.request.header.Accept-Language",
+                            "integration.request.header.Authorization": "method.request.header.Authorization",
+                            "integration.request.header.Content-Type": "method.request.header.Content-Type"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "ywd4sg",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "zoar8r",
+            "parentId": "8zphg3s498",
+            "pathPart": "student",
+            "path": "/student",
+            "resourceMethods": {
+                "GET": {
+                    "httpMethod": "GET",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {},
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "GET",
+                        "uri": "https://user.ybyraihub.kz/api/student",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "zoar8r",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "OPTIONS": {
+                    "httpMethod": "OPTIONS",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {
+                        "method.request.header.Accept": false,
+                        "method.request.header.Accept-Language": false,
+                        "method.request.header.Authorization": false
+                    },
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseParameters": {
+                                "method.response.header.Access-Control-Allow-Headers": false,
+                                "method.response.header.Access-Control-Allow-Methods": false,
+                                "method.response.header.Access-Control-Allow-Origin": false
+                            },
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "MOCK",
+                        "requestTemplates": {
+                            "application/json": "{\"statusCode\": 200}"
+                        },
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "zoar8r",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.Access-Control-Allow-Headers": "'Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token'",
+                                    "method.response.header.Access-Control-Allow-Methods": "'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT'",
+                                    "method.response.header.Access-Control-Allow-Origin": "'*'"
+                                }
+                            }
+                        }
+                    }
+                },
+                "PUT": {
+                    "httpMethod": "PUT",
+                    "authorizationType": "COGNITO_USER_POOLS",
+                    "authorizerId": "9jdw2n",
+                    "apiKeyRequired": false,
+                    "requestParameters": {},
+                    "requestModels": {},
+                    "methodResponses": {
+                        "200": {
+                            "statusCode": "200",
+                            "responseModels": {
+                                "application/json": "Empty"
+                            }
+                        }
+                    },
+                    "methodIntegration": {
+                        "type": "HTTP",
+                        "httpMethod": "PUT",
+                        "uri": "https://user.ybyraihub.kz/api/student",
+                        "connectionType": "INTERNET",
+                        "passthroughBehavior": "WHEN_NO_MATCH",
+                        "timeoutInMillis": 29000,
+                        "cacheNamespace": "zoar8r",
+                        "cacheKeyParameters": [],
+                        "integrationResponses": {
+                            "200": {
+                                "statusCode": "200",
+                                "responseTemplates": {
+                                    "application/json": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

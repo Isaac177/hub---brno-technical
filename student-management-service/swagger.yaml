@@ -1,0 +1,1406 @@
+openapi: 3.0.0
+info:
+  title: Student Management Service API
+  version: 1.0.0
+  description: API for managing student enrollments, payments, certificates, courses, quizzes, and more
+
+paths:
+  /api/:
+    get:
+      summary: Welcome message
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /enrollments:
+    post:
+      summary: Create a new enrollment
+      tags:
+        - Enrollments
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                courseId:
+                  type: string
+                paymentDetails:
+                  type: object
+                  properties:
+                    amount:
+                      type: number
+                    currency:
+                      type: string
+                    paymentMethod:
+                      type: string
+                    lastFourDigits:
+                      type: string
+                language:
+                  type: string
+      responses:
+        '201':
+          description: Enrollment created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  enrollment:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      userId:
+                        type: string
+                      courseId:
+                        type: string
+                      status:
+                        type: string
+                      enrolledAt:
+                        type: string
+                        format: date-time
+                      courseTitle:
+                        type: string
+                      courseLevel:
+                        type: string
+                      courseDuration:
+                        type: string
+                      studentName:
+                        type: string
+                      studentEmail:
+                        type: string
+        '400':
+          description: Bad request
+        '404':
+          description: User or course not found
+
+    get:
+      summary: List enrollments
+      tags:
+        - Enrollments
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: query
+          name: userId
+          schema:
+            type: string
+        - in: query
+          name: status
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of enrollments
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  enrollments:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        userId:
+                          type: string
+                        courseId:
+                          type: string
+                        status:
+                          type: string
+                        enrolledAt:
+                          type: string
+                          format: date-time
+                        studentName:
+                          type: string
+                        courseTitle:
+                          type: string
+
+    patch:
+      summary: Update enrollment status
+      tags:
+        - Enrollments
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                status:
+                  type: string
+                  enum: [ACTIVE, COMPLETED, DROPPED, ON_HOLD]
+                progress:
+                  type: number
+      responses:
+        '200':
+          description: Enrollment status updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  enrollment:
+                    type: object
+        '400':
+          description: Bad request
+        '404':
+          description: Enrollment not found
+
+  /enrollments/{id}:
+    get:
+      summary: Get enrollment details
+      tags:
+        - Enrollments
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Enrollment details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  enrollment:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      userId:
+                        type: string
+                      courseId:
+                        type: string
+                      status:
+                        type: string
+                      progress:
+                        type: number
+                      enrolledAt:
+                        type: string
+                        format: date-time
+                      completedAt:
+                        type: string
+                        format: date-time
+                      studentName:
+                        type: string
+                      studentEmail:
+                        type: string
+                      courseTitle:
+                        type: string
+                      courseLevel:
+                        type: string
+                      courseDuration:
+                        type: string
+                      payments:
+                        type: array
+                        items:
+                          type: object
+        '404':
+          description: Enrollment not found
+
+  /certificates:
+    post:
+      summary: Generate a new certificate
+      tags:
+        - Certificates
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                enrollmentId:
+                  type: string
+      responses:
+        '201':
+          description: Certificate generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  certificate:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      enrollmentId:
+                        type: string
+                      issuedAt:
+                        type: string
+                        format: date-time
+                      pdfUrl:
+                        type: string
+                      verificationCode:
+                        type: string
+                      studentName:
+                        type: string
+                      courseTitle:
+                        type: string
+        '400':
+          description: Bad request
+        '404':
+          description: Enrollment, user, or course not found
+
+    get:
+      summary: List certificates
+      tags:
+        - Certificates
+      parameters:
+        - in: query
+          name: userId
+          schema:
+            type: string
+        - in: query
+          name: page
+          schema:
+            type: integer
+            default: 1
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 10
+      responses:
+        '200':
+          description: List of certificates
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  certificates:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        issuedAt:
+                          type: string
+                          format: date-time
+                        pdfUrl:
+                          type: string
+                        verificationCode:
+                          type: string
+                        studentName:
+                          type: string
+                        courseTitle:
+                          type: string
+
+  /certificates/{verificationCode}/verify:
+    get:
+      summary: Verify a certificate
+      tags:
+        - Certificates
+      parameters:
+        - in: path
+          name: verificationCode
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Certificate verification result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  isValid:
+                    type: boolean
+                  certificate:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      issuedAt:
+                        type: string
+                        format: date-time
+                      studentName:
+                        type: string
+                      courseTitle:
+                        type: string
+        '404':
+          description: Certificate not found
+
+  /courses:
+    get:
+      summary: List courses
+      tags:
+        - Courses
+      parameters:
+        - in: header
+          name: Accept-Language
+          schema:
+            type: string
+          required: false
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /courses/{id}:
+    get:
+      summary: Get course details
+      tags:
+        - Courses
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept-Language
+          schema:
+            type: string
+          required: false
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quizzes:
+    get:
+      summary: List quizzes
+      tags:
+        - Quizzes
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new quiz
+      tags:
+        - Quizzes
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quizzes/{id}:
+    get:
+      summary: Get quiz details
+      tags:
+        - Quizzes
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a quiz
+      tags:
+        - Quizzes
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a quiz
+      tags:
+        - Quizzes
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /student-assignments:
+    get:
+      summary: List student assignments
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new student assignment
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /student-assignments/{id}:
+    get:
+      summary: Get student assignment details
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a student assignment
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a student assignment
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /student-assignments/by-assignment:
+    get:
+      summary: Get student assignments by assignment
+      tags:
+        - Student Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quiz-questions:
+    get:
+      summary: List quiz questions
+      tags:
+        - Quiz Questions
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new quiz question
+      tags:
+        - Quiz Questions
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quiz-questions/{id}:
+    get:
+      summary: Get quiz question details
+      tags:
+        - Quiz Questions
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a quiz question
+      tags:
+        - Quiz Questions
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a quiz question
+      tags:
+        - Quiz Questions
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /posts:
+    get:
+      summary: List posts
+      tags:
+        - Posts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new post
+      tags:
+        - Posts
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /posts/{id}:
+    get:
+      summary: Get post details
+      tags:
+        - Posts
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a post
+      tags:
+        - Posts
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a post
+      tags:
+        - Posts
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /lessons:
+    get:
+      summary: List lessons
+      tags:
+        - Lessons
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new lesson
+      tags:
+        - Lessons
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /lessons/{id}:
+    get:
+      summary: Get lesson details
+      tags:
+        - Lessons
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a lesson
+      tags:
+        - Lessons
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /course-progress:
+    get:
+      summary: List course progress
+      tags:
+        - Course Progress
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new course progress entry
+      tags:
+        - Course Progress
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /course-progress/{id}:
+    get:
+      summary: Get course progress details
+      tags:
+        - Course Progress
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update course progress
+      tags:
+        - Course Progress
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete course progress
+      tags:
+        - Course Progress
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /course-categories:
+    get:
+      summary: List course categories
+      tags:
+        - Course Categories
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new course category
+      tags:
+        - Course Categories
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /course-categories/{id}:
+    get:
+      summary: Get course category details
+      tags:
+        - Course Categories
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a course category
+      tags:
+        - Course Categories
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a course category
+      tags:
+        - Course Categories
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /reviews:
+    get:
+      summary: List reviews
+      tags:
+        - Reviews
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new review
+      tags:
+        - Reviews
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /reviews/{id}:
+    get:
+      summary: Get review details
+      tags:
+        - Reviews
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a review
+      tags:
+        - Reviews
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a review
+      tags:
+        - Reviews
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /sections:
+    get:
+      summary: List sections
+      tags:
+        - Sections
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new section
+      tags:
+        - Sections
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /sections/{id}:
+    get:
+      summary: Get section details
+      tags:
+        - Sections
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a section
+      tags:
+        - Sections
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a section
+      tags:
+        - Sections
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /assignments:
+    get:
+      summary: List assignments
+      tags:
+        - Assignments
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new assignment
+      tags:
+        - Assignments
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /assignments/{id}:
+    get:
+      summary: Get assignment details
+      tags:
+        - Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update an assignment
+      tags:
+        - Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete an assignment
+      tags:
+        - Assignments
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quiz-game:
+    post:
+      summary: Submit quiz game answers
+      tags:
+        - Quiz Game
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /quiz-game/{quizId}:
+    get:
+      summary: Get quiz game questions
+      tags:
+        - Quiz Game
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: quizId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Start a quiz game
+      tags:
+        - Quiz Game
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: quizId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /resource:
+    get:
+      summary: List resources
+      tags:
+        - Resources
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a new resource
+      tags:
+        - Resources
+      security:
+        - CognitoUserPools: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /resource/{id}:
+    get:
+      summary: Get resource details
+      tags:
+        - Resources
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: Update a resource
+      tags:
+        - Resources
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a resource
+      tags:
+        - Resources
+      security:
+        - CognitoUserPools: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+    CognitoUserPools:
+      type: apiKey
+      name: Authorization
+      in: header
